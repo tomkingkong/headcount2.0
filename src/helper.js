@@ -5,11 +5,18 @@ export default class DistrictRepository {
 
   removeDuplicates = (data) => {
     return data.reduce((uniqueObj, school) => {
-      if (!uniqueObj[school.Location]) {
-        uniqueObj[school.Location] = [];
+      let name = school.Location.toUpperCase();
+      if (!uniqueObj[name]) {
+        uniqueObj[name] = {location: name, stats: {}};
       }
-      uniqueObj[school.Location].push(school);
+      uniqueObj[name].stats[school.TimeFrame] = (Math.round(1000*school.Data)/1000) || 0;
       return uniqueObj;
     }, {});
+  }
+
+  findByName = (search) => {
+    if (!search) return;
+    let s = search.toUpperCase();
+    return !this.stats[s] ? undefined : this.stats[s];
   }
 }
