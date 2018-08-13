@@ -4,19 +4,35 @@ export default class DistrictRepository {
   }
 
   removeDuplicates = (data) => {
-    return data.reduce((uniqueObj, school) => {
+    return data.reduce((scrubObj, school) => {
       let name = school.Location.toUpperCase();
-      if (!uniqueObj[name]) {
-        uniqueObj[name] = {location: name, stats: {}};
+      if (!scrubObj[name]) {
+        scrubObj[name] = {
+          location: name, 
+          stats: {}
+        };
       }
-      uniqueObj[name].stats[school.TimeFrame] = (Math.round(1000*school.Data)/1000) || 0;
-      return uniqueObj;
+      scrubObj[name].stats[school.TimeFrame] = (Math.round(1000*school.Data)/1000) || 0;
+      return scrubObj;
     }, {});
   }
 
   findByName = (search) => {
     if (!search) return;
-    let s = search.toUpperCase();
+    const s = search.toUpperCase();
     return !this.stats[s] ? undefined : this.stats[s];
+  }
+
+  findAllMatches = (search) => {
+    const arr = Object.keys(this.stats).map(key => this.stats[key]);
+    if (!search) {
+      return arr;
+    } else {
+      const s = search.toUpperCase();
+      return (
+        arr
+        .filter(key => key.location.includes(s))
+      );
+    }
   }
 }
