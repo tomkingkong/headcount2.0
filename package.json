@@ -19,8 +19,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "eslint": "react-scripts eslint"
-  },
-  "jest": {
-    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js"
   }
 }
