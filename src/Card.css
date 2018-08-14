@@ -1,0 +1,47 @@
+.Card {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  box-shadow: 0.1rem 0.1rem lightgrey;
+  min-width: 8rem;
+  width: 100%;
+  max-width: 10rem;
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem;
+  transition: all 0.25s linear;
+}
+
+.Card:hover {
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0.3rem 0.3rem lightblue;
+}
+
+.Card ul {
+  list-style-type: none;
+}
+
+.Card h1 {
+  transition: all 0.35s linear;
+  border-bottom: 0.2rem double transparent;
+  font-size: 0.9rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+
+}
+
+.Card:hover h1 {
+  border-bottom: 0.2rem double lightblue;
+  color: rgba(8, 107, 221);
+}
+
+.selected {
+  border: 0.2rem solid rgb(18, 100, 194);
+}
+
+.Card .Green {
+  color: rgb(12, 173, 12);
+}
+
+.Card .Red {
+  color: rgb(243, 14, 14);
+}

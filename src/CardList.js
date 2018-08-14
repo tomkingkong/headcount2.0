@@ -1,12 +1,14 @@
 import React from 'react';
 
+import './CardList.css';
 import Card from './Card';
 
 const CardList = ({cards}) => {
-  const displayCards = cards.map(card => <Card {...card} key={card.id} />);
+  let id = 0;
+  const displayCards = cards.map(card => <Card {...card} key={id++} />);
 
   return (
-    <section>
+    <section className="CardList">
       {displayCards}
     </section>
   );
