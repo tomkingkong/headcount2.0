@@ -13,21 +13,21 @@
 }
 
 .Card:hover {
-  background-color: rgb(240, 240, 240);
-  box-shadow: 0.3rem 0.3rem lightblue;
+  box-shadow: 0.4rem 0.4rem lightblue;
 }
 
 .Card ul {
   list-style-type: none;
+  padding: auto;
 }
 
 .Card h1 {
-  transition: all 0.35s linear;
   border-bottom: 0.2rem double transparent;
   font-size: 0.9rem;
   padding-bottom: 0.5rem;
+  height: 1.8rem;
   text-align: center;
-
+  transition: all 0.35s linear;
 }
 
 .Card:hover h1 {
