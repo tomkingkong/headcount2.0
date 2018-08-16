@@ -13,7 +13,7 @@ class Form extends Component {
   handleChange = (e) => {
     const { value } = e.target;
     this.setState({
-      [name]: value
+      input: value
     });
   }
 
