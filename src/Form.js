@@ -19,7 +19,13 @@ class Form extends Component {
 
   render() {
     return (
-      <form className="Form">
+      <form 
+        className="Form" 
+        onSubmit={(e) => {
+          e.preventDefault();
+          
+        }}
+      >
         <input 
           type="text" 
           placeholder="Select a school"
