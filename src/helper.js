@@ -24,15 +24,25 @@ export default class DistrictRepository {
   }
 
   findAllMatches = (search) => {
-    const arr = Object.keys(this.stats).map(key => this.stats[key]);
-    if (!search) {
-      return arr;
-    } else {
-      const s = search.toUpperCase();
-      return (
-        arr
-        .filter(key => key.location.includes(s))
-      );
+    const arr = Object.values(this.stats);
+    return !search ? arr : arr.filter(key => key.location.includes(search.toUpperCase()));
+  }
+
+  findAverage = (district) => {
+    const years = Object.values(this.stats[district].stats);
+    return Math.round(1000*years.reduce((sum, num) => sum + num)/years.length)/1000;
+  }
+
+  compareDistrictAverages = (district1, district2) => {
+    const dist1 = district1.toUpperCase();
+    const dist2 = district2.toUpperCase();
+    const val1 = this.findAverage(dist1);
+    const val2 = this.findAverage(dist2);
+
+    return {
+      [dist1]: val1,
+      [dist2]: val2, 
+      "compared": Math.round(1000*val1/val2)/1000
     }
   }
 }
