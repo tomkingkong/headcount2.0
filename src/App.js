@@ -28,7 +28,7 @@ class App extends Component {
       schools: newSearch
     })
   }
-
+  
   selectSchool = (id) => {
     console.log('selected', id)
   }
