@@ -29,8 +29,9 @@ class App extends Component {
     })
   }
 
-  componentDidMount() {
-    this.updateDistrict(undefined);
+
+  selectSchool = (id) => {
+    console.log('selected', id)
   }
 
   render() {
