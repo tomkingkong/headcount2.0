@@ -17,6 +17,10 @@ class App extends Component {
     }
   }
 
+  componentDidMount() {
+    this.updateDistrict(undefined);
+  }
+
   updateDistrict = (string) => {
     let newSearch = district.findAllMatches(string);
     newSearch.forEach(school => school.key = school.location);
