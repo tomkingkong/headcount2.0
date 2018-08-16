@@ -35,6 +35,7 @@ class App extends Component {
   }
 
   render() {
+    const { schools, compareSchools } = this.state
     return (
       <div className="App">
         {/* <Form updateDistrict={this.updateDistrict}/> */}
