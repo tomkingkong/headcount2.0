@@ -29,7 +29,6 @@ class App extends Component {
     })
   }
 
-
   selectSchool = (id) => {
     console.log('selected', id)
   }
@@ -38,8 +37,9 @@ class App extends Component {
     const { schools, compareSchools } = this.state
     return (
       <div className="App">
-        {/* <Form updateDistrict={this.updateDistrict}/> */}
-        <CardList cards={this.state.schools}/>
+        <CardList schools={compareSchools} />
+        <Form updateDistrict={this.updateDistrict} />
+        <CardList schools={schools} selectSchool={this.selectSchool}/>
       </div>
     );
   }
