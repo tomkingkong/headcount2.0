@@ -29,8 +29,8 @@ class Form extends Component {
         <input 
           type="text" 
           placeholder="Select a school"
-          onChange={() => {
-            this.handleChange;
+          onChange={(e) => {
+            this.handleChange(e);
             this.props.updateDistrict(this.state.input);
           }}
           value={this.state.input}
