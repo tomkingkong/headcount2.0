@@ -13,7 +13,7 @@ const Card = ({stats, location, id, selected}) => {
   ))
   
   return (
-    <article className="Card">
+    <article className="Card" onClick={() => {selected(id)}}>
       <h1>{location}</h1>
       <ul>{dates}</ul>
     </article>
