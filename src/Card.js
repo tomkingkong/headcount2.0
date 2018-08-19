@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './Card.css';
 
@@ -18,6 +19,14 @@ const Card = ({stats, location, id, selected}) => {
       <ul>{dates}</ul>
     </article>
   );
-}
+};
+
+Card.propTypes = {
+  stats: PropTypes.object, 
+  location: PropTypes.string, 
+  id: PropTypes.string, 
+  toggleCompare: PropTypes.func, 
+  comparedData: PropTypes.object
+};
 
 export default Card;
