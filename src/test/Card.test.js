@@ -42,7 +42,7 @@ describe('Card', () => {
     const wrapper = shallow(<Card {...schoolEmpty} key={schoolEmpty.id}/>);
     expect(wrapper.find('li').hasClass('Green')).toEqual(true);
   });
-  
+
   it('should add Red class to li if percent is lesser than 0.5', () => {
     const schoolEmpty = {'stats': { 2001: 0.4}, 'location': '', 'id':''};
     const wrapper = shallow(<Card {...schoolEmpty} key={schoolEmpty.id}/>);
