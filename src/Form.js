@@ -9,7 +9,7 @@ class Form extends Component {
     this.state = {
       input: ''
     };
-    }
+  }
 
   handleChange = (event) => {
     const { value } = event.target;
