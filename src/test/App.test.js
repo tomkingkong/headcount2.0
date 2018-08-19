@@ -160,6 +160,20 @@ describe('App', () => {
     expect(expected).toEqual(0);
   });
 
+  it('user should see a comparison card if two cards are in the comparison array', () => {
+    wrapper = mount(<App />);
+    const cardInField1 = wrapper.find(CardList).last().find(Card).at(0).find('article');
+    const cardInField2 = wrapper.find(CardList).last().find(Card).at(1).find('article');
+    cardInField1.simulate('click');
+    cardInField2.simulate('click');
+    const expected1 = Object.keys(wrapper.state('compareCards')[0]).length;
+    const expected2 = Object.keys(wrapper.state('compareCards')[1]).length;
+    const comparedData = Object.keys(wrapper.state('comparedData')).length;
+    const comparedDisplay = Object.keys(wrapper.find(Card).first().props().comparedData).length;
+    expect(expected1).toEqual(3);
+    expect(expected2).toEqual(3);
+    expect(comparedData).toEqual(3);
+    expect(comparedDisplay).toEqual(3);
   });
 
   it('should render a CardList component', () => {
