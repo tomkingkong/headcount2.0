@@ -17,6 +17,9 @@ describe('App', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should match snapshot with compareCards filled with partial data', () => {
+    wrapper.instance().toggleCompare('COLORADO');
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('renders without crashing', () => {
