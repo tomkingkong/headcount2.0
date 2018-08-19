@@ -26,6 +26,11 @@ describe('Card', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should match snapshot with an empty data object', () => {
+    const schoolEmpty = {'stats': { }, 'location': '', 'id':''};
+    const wrapper = shallow(<Card {...schoolEmpty} key={schoolEmpty.id}/>);
+    expect(wrapper).toMatchSnapshot();
+  });
 
   beforeEach(() => {
     wrapper = shallow(<Card {...card} key={card.id}/>);
