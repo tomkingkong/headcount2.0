@@ -20,6 +20,12 @@ describe('Card', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should match snapshot with a data object and function', () => {
+    const selectSchool = jest.fn();
+    const wrapper = shallow(<Card {...school} key={school.id} selected={selectSchool}/>);
+    expect(wrapper).toMatchSnapshot();
+  });
+
 
   beforeEach(() => {
     wrapper = shallow(<Card {...card} key={card.id}/>);
