@@ -32,8 +32,10 @@ describe('Card', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  beforeEach(() => {
-    wrapper = shallow(<Card {...card} key={card.id}/>);
+  it('should render the correct number of li\'s', () => {
+    const wrapper = shallow(<Card {...school} key={school.id}/>);
+    expect(wrapper.find('li').length).toEqual(4);
+  });
   });
   
   it('should exist', () => {
