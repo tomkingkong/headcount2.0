@@ -8,7 +8,12 @@ class Form extends Component {
     super(props);
     this.state = {
       input: ''
+    };
     }
+
+  handleChange = (event) => {
+    const { value } = event.target;
+    this.setState({ input: value }, () => this.props.updateDistrict(value));
   }
 
   handleChange = (e) => {
