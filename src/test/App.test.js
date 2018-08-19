@@ -81,6 +81,14 @@ describe('App', () => {
     expect(expected.length).toEqual(0);
   });
 
+  it('passing toggleCompre an id should have it update state on compareCards array', () => {
+    let expected = Object.keys(wrapper.state('compareCards')[0]).length;
+    expect(expected).toEqual(0);
+    wrapper.instance().toggleCompare('COLORADO');
+    expected = Object.keys(wrapper.state('compareCards')[0]).length;  
+    expect(expected).toEqual(3);
+  });
+
   });
 
   it('should have a default state of an empty schools array', () => {
