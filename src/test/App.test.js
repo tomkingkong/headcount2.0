@@ -71,6 +71,16 @@ describe('App', () => {
     expect(expected.length).toEqual(3);
   });
 
+  it('should not contain a filled comparedData object in state if data is removed from comparedCards', () => {
+    wrapper.instance().toggleCompare('COLORADO');
+    wrapper.instance().toggleCompare('ASPEN 1');
+    let expected = Object.keys(wrapper.state('comparedData'));
+    expect(expected.length).toEqual(3);
+    wrapper.instance().toggleCompare('ASPEN 1');
+    expected = Object.keys(wrapper.state('comparedData'));
+    expect(expected.length).toEqual(0);
+  });
+
   });
 
   it('should have a default state of an empty schools array', () => {
