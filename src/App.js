@@ -33,6 +33,7 @@ class App extends Component {
   toggleCompare = (id) => {
     const { compareCards } = this.state;
     const newComparison = compareCards;
+    const foundDistrict = district.findByName(id);
     this.setState({
       schools: newSearch
     })
