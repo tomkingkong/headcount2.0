@@ -28,14 +28,10 @@ class Form extends Component {
       <form className="Form" 
         onSubmit={this.handleSubmit}
       >
-        <input 
-          type="text" 
+        <input type="text" 
           placeholder="Select a school"
-          onChange={(e) => {
-            this.handleChange(e);
-            this.props.updateDistrict(this.state.input);
-          }}
-          value={this.state.input}
+          value={input}
+          onChange={this.handleChange}
         />
       </form>
     );
