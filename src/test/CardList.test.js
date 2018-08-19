@@ -71,7 +71,9 @@ describe('CardList', () => {
   });
 
   it('should display correct number of cards', () => {
-    wrapper = mount(<CardList cards={mockData} />)
+    const wrapper = mount(<CardList dataCards={mockData} />);
     expect(wrapper.find('article').length).toEqual(3);
   });
+
+  
 });
