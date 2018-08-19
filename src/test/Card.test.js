@@ -14,8 +14,12 @@ const school = {
 };
 
 describe('Card', () => {
-  let wrapper;
-  let card = {'Date': {2005: 0.521, 2017: 0.521, 2018: 0.521, 2019: 0.521 }, 'Location': 'COLORADO', 'id':1}
+    
+  it('should match snapshot with a data object', () => {
+    const wrapper = shallow(<Card {...school} key={school.id}/>);
+    expect(wrapper).toMatchSnapshot();
+  });
+
 
   beforeEach(() => {
     wrapper = shallow(<Card {...card} key={card.id}/>);
