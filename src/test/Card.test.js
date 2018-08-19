@@ -2,6 +2,16 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import Card from '../Card';
+const school = {
+  'stats': { 
+    2005: 0.521, 
+    2017: 0.521, 
+    2018: 0.521, 
+    2019: 0.521 
+  }, 
+  'location': 'SHMOOP', 
+  'id':'SHMOOP'
+};
 
 describe('Card', () => {
   let wrapper;
