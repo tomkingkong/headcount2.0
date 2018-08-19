@@ -176,8 +176,5 @@ describe('App', () => {
     expect(comparedDisplay).toEqual(3);
   });
 
-  it('should render a CardList component', () => {
-    expect(wrapper.find('CardList').length).toEqual(1);
-  });
-})
+});
 
