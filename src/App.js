@@ -61,7 +61,7 @@ class App extends Component {
   }
 
   render() {
-    const { schools, compareSchools } = this.state
+    const { dataCards, comparedData, compareCards } = this.state;
     return (
       <div className="App">
         <CardList schools={compareSchools} />
