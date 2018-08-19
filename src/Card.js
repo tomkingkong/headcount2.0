@@ -12,8 +12,7 @@ const Card = ({
 }) => {
 
   const dates = Object.keys(stats).map(year => (
-    <li 
-      className={stats[year] > 0.5 ? 'Green' : 'Red'} 
+      <li className={stats[year] > 0.5 ? 'Green' : 'Red'} 
       key={location+year}
     >
       {year}: {stats[year]}
