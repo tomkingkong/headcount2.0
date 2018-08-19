@@ -26,6 +26,17 @@ const Card = ({
       </div>
     );
   };
+
+  const displayCompareData = () => {
+    const data = Object.keys(comparedData);
+    return (
+      <div>
+        <h2>{data[0]}: {comparedData[data[0]]}</h2>
+        <p>{comparedData.compared}</p>
+        <h2>{data[1]}: {comparedData[data[1]]}</h2>
+      </div>
+    );
+  };
     </article>
   );
 };
