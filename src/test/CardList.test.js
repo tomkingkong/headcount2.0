@@ -55,8 +55,19 @@ describe('CardList', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should render section element', () => {
-    expect(wrapper.find('section').length).toEqual(1);
+  it('should pass Card components props without select function', () => {
+    const wrapper = mount(<CardList dataCards={mockData}/>);
+    const expected = {
+      'stats': {
+        2005: 0.521, 
+        2017: 0.521, 
+        2018: 0.521, 
+        2019: 0.521 
+      }, 
+      'location': 'COLORADO', 
+      'id':'COLORADO'
+    };
+    expect(wrapper.find(Card).first().props()).toEqual(expected);
   });
 
   it('should display correct number of cards', () => {
