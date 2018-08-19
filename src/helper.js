@@ -38,11 +38,12 @@ export default class DistrictRepository {
     const dist2 = district2.toUpperCase();
     const val1 = this.findAverage(dist1);
     const val2 = this.findAverage(dist2);
+    const compared = Math.round(1000*val1/val2)/1000 === Infinity ? 0 : Math.round(1000*val1/val2)/1000;
 
     return {
       [dist1]: val1,
       [dist2]: val2, 
-      "compared": Math.round(1000*val1/val2)/1000
-    }
+      "compared": compared
+    };
   }
 }
