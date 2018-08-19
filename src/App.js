@@ -34,6 +34,7 @@ class App extends Component {
     const { compareCards } = this.state;
     const newComparison = compareCards;
     const foundDistrict = district.findByName(id);
+    const cardIndex = compareCards.indexOf(foundDistrict);
     this.setState({
       schools: newSearch
     })
