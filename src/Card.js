@@ -11,14 +11,14 @@ const Card = ({
   comparedData
 }) => {
 
+  const displayCardData = () => {
   const dates = Object.keys(stats).map(year => (
       <li className={stats[year] > 0.5 ? 'Green' : 'Red'} 
       key={location+year}
     >
       {year}: {stats[year]}
     </li>
-  ))
-  
+    ));
   return (
     <article className="Card" onClick={() => {selected(id)}}>
       <h1>{location}</h1>
