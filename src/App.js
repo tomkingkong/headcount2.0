@@ -25,8 +25,7 @@ class App extends Component {
   }
 
   updateDistrict = (string) => {
-    let newSearch = district.findAllMatches(string);
-    newSearch.forEach(school => school.key = school.location);
+    const dataCards = district.findAllMatches(string);
     this.setState({
       schools: newSearch
     })
