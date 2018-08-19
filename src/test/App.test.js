@@ -37,6 +37,18 @@ describe('App', () => {
     expect(wrapper.find(Form).props()).toEqual(expected);
   });
   
+  it('should pass correct props to Card component', () => {
+    wrapper.instance().toggleCompare('COLORADO');
+    wrapper.instance().toggleCompare('ASPEN 1');
+    const expected =  {
+      "comparedData": {
+        'COLORADO': 0.53, 
+        'ASPEN 1': 0.999,
+        'compared': 0.531
+      }
+    };
+    expect(wrapper.find(Card).first().props()).toEqual(expected);
+  });
   });
 
   it('should have a default state of an empty schools array', () => {
