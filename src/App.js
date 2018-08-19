@@ -17,7 +17,7 @@ class App extends Component {
       compareCards: [{}, {}],
       comparedData: {}
     };
-    }
+  }
 
   componentDidMount() {
     this.updateDistrict();
@@ -49,12 +49,12 @@ class App extends Component {
       compareCards: newComparison
     }, () => this.toggleComparedData(...this.state.compareCards));
   }
-  
+
   toggleComparedData = (loc1, loc2) => {
     let updateData = {};
     if (Object.keys(loc1).length && Object.keys(loc2).length) {
       updateData = district.compareDistrictAverages(loc1.location, loc2.location);
-  }
+    } 
     this.setState({
       comparedData: updateData
     });
