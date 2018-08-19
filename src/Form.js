@@ -16,11 +16,10 @@ class Form extends Component {
     this.setState({ input: value }, () => this.props.updateDistrict(value));
   }
 
-  handleChange = (e) => {
-    const { value } = e.target;
-    this.setState({
-      input: value
-    });
+  handleSubmit = (event) => {
+    const { value } = event.target;
+    event.preventDefault();
+    this.setState({ input: '' }, () => this.props.updateDistrict(value));
   }
 
   render() {
