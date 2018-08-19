@@ -13,8 +13,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      schools: [],
-      compareSchools: []
+      dataCards: [],
     }
   }
 
