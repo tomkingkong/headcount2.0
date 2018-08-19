@@ -37,6 +37,13 @@ const Card = ({
       </div>
     );
   };
+  
+  return (
+    <article className="Card" 
+      onClick={() => { toggleCompare && toggleCompare(id); }} 
+    >
+      {comparedData && displayCompareData()}
+      {stats && displayCardData()}
     </article>
   );
 };
