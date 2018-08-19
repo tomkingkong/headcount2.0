@@ -27,6 +27,10 @@ describe('App', () => {
     wrapper.instance().toggleCompare('ASPEN 1');
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should update state on componentDidMount with a populated dataCards array', () => {
+    expect(wrapper.state('dataCards')).not.toEqual(0);
+  });
   });
 
   it('should have a default state of an empty schools array', () => {
