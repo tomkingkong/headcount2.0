@@ -3,7 +3,14 @@ import PropTypes from 'prop-types';
 
 import './Card.css';
 
-const Card = ({stats, location, id, selected}) => {
+const Card = ({
+  stats, 
+  location, 
+  id, 
+  toggleCompare, 
+  comparedData
+}) => {
+
   const dates = Object.keys(stats).map(year => (
     <li 
       className={stats[year] > 0.5 ? 'Green' : 'Red'} 
