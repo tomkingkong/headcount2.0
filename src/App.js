@@ -30,6 +30,7 @@ class App extends Component {
     this.setState({ dataCards });
   }
   
+  toggleCompare = (id) => {
     this.setState({
       schools: newSearch
     })
