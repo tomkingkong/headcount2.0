@@ -13,8 +13,10 @@ describe('App', () => {
     wrapper = shallow(<App />);
   });
 
-  it('should exist', () => {
-    expect(wrapper).toBeDefined();
+  it('should match snapshot with default states', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
+
   });
 
   it('renders without crashing', () => {
