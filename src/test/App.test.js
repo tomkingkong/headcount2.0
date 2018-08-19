@@ -115,6 +115,16 @@ describe('App', () => {
     expect(expected).toEqual(3);
   });
 
+  it('selecting two cards should add information to the comparedData object in state', () => {
+    wrapper = mount(<App />);
+    const cardInField1 = wrapper.find(CardList).last().find(Card).at(0).find('article');
+    const cardInField2 = wrapper.find(CardList).last().find(Card).at(1).find('article');
+    expect(Object.keys(wrapper.state('comparedData')).length).toEqual(0);
+    cardInField1.simulate('click');
+    cardInField2.simulate('click');
+    expect(Object.keys(wrapper.state('comparedData')).length).toEqual(3);
+  });
+
   });
 
   it('should have a default state of an empty schools array', () => {
