@@ -22,9 +22,11 @@ describe('App', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<App />, div);
+  it('should match snapshot with compareCards filled filled with data', () => {
+    wrapper.instance().toggleCompare('COLORADO');
+    wrapper.instance().toggleCompare('ASPEN 1');
+    expect(wrapper).toMatchSnapshot();
+  });
   });
 
   it('should have a default state of an empty schools array', () => {
