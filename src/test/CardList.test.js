@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { shallow, mount } from 'enzyme';
 
+import Card from '../Card';
 import CardList from '../CardList.js';
 
 describe('CardList', () => {
