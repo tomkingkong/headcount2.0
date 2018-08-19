@@ -15,6 +15,8 @@ class App extends Component {
     this.state = {
       dataCards: [],
       compareCards: [{}, {}],
+      comparedData: {}
+    };
     }
   }
 
