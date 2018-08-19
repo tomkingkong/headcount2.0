@@ -99,6 +99,12 @@ describe('App', () => {
     expect(expected).toEqual(0);
   });
 
+  it('passing toggleCompareData two data cards should set state on the comparedData object ', () => {
+    wrapper.instance().toggleComparedData({'location':'COLORADO'}, {'location': 'ASPEN 1'});
+    const expected = Object.keys(wrapper.state('comparedData'));
+    expect(expected.length).toEqual(3);
+  });
+
   });
 
   it('should have a default state of an empty schools array', () => {
