@@ -1,7 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { shallow, mount } from 'enzyme';
+
 import App from '../App';
+import CardList from '../CardList';
+import Card from '../Card';
+import Form from '../Form';
 
 describe('App', () => {
   let wrapper;
