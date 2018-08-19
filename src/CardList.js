@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 import './CardList.css';
 import Card from './Card';
 
-const CardList = ({schools, selectSchool}) => {
-  const displayCards = schools.map(school => (
-    <Card 
-      {...school} 
-      id={school.key} 
-      selected={selectSchool} 
+const CardList = ({dataCards, toggleCompare}) => {
+  const displayCards = dataCards.map(card => (
+    <Card {...card} 
+      key={card.location}
+      id={card.location} 
+      toggleCompare={toggleCompare} 
     />
   ));
 
