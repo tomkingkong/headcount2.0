@@ -20,9 +20,12 @@ const Card = ({
     </li>
     ));
   return (
-    <article className="Card" onClick={() => {selected(id)}}>
+      <div>
       <h1>{location}</h1>
       <ul>{dates}</ul>
+      </div>
+    );
+  };
     </article>
   );
 };
