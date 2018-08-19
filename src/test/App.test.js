@@ -105,6 +105,16 @@ describe('App', () => {
     expect(expected.length).toEqual(3);
   });
 
+  it('when a user selects a card it should appear in the compareCards array', () => {
+    wrapper = mount(<App />);
+    const cardInField = wrapper.find(CardList).last().find(Card).first().find('article');
+    let expected = Object.keys(wrapper.state('compareCards')[0]).length;  
+    expect(expected).toEqual(0);
+    cardInField.simulate('click');
+    expected = Object.keys(wrapper.state('compareCards')[0]).length;  
+    expect(expected).toEqual(3);
+  });
+
   });
 
   it('should have a default state of an empty schools array', () => {
