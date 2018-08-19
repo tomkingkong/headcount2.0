@@ -65,8 +65,9 @@ class App extends Component {
     return (
       <div className="App">
         {typeof comparedData.compared === "number" && <Card comparedData={comparedData} />}
+        <CardList dataCards={compareCards} toggleCompare={this.toggleCompare} />
         <Form updateDistrict={this.updateDistrict} />
-        <CardList schools={schools} selectSchool={this.selectSchool}/>
+        <CardList dataCards={dataCards} toggleCompare={this.toggleCompare} />
       </div>
     );
   }
