@@ -19,13 +19,13 @@ export default class DistrictRepository {
 
   findByName = (search) => {
     if (!search) return;
-    const s = search.toUpperCase();
-    return !this.stats[s] ? undefined : this.stats[s];
+    const srch = search.toUpperCase();
+    return !this.stats[srch] ? undefined : this.stats[srch];
   }
 
   findAllMatches = (search) => {
-    const arr = Object.values(this.stats);
-    return !search ? arr : arr.filter(key => key.location.includes(search.toUpperCase()));
+    const array = Object.values(this.stats);
+    return !search ? array : array.filter(key => key.location.includes(search.toUpperCase()));
   }
 
   findAverage = (district) => {
