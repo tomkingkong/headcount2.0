@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './CardList.css';
 import Card from './Card';
@@ -17,6 +18,11 @@ const CardList = ({schools, selectSchool}) => {
       {displayCards}
     </section>
   );
-}
+};
+
+CardList.propTypes = {
+  dataCards: PropTypes.array,
+  toggleCompare: PropTypes.func
+};
 
 export default CardList;
