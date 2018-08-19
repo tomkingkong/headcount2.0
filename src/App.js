@@ -52,6 +52,8 @@ class App extends Component {
   
   toggleComparedData = (loc1, loc2) => {
     let updateData = {};
+    if (Object.keys(loc1).length && Object.keys(loc2).length) {
+      updateData = district.compareDistrictAverages(loc1.location, loc2.location);
   }
 
   render() {
