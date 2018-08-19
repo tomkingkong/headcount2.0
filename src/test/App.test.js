@@ -89,6 +89,16 @@ describe('App', () => {
     expect(expected).toEqual(3);
   });
 
+  it('passing toggleCompre an id already existing in compareCards array should remove it', () => {
+    let expected = Object.keys(wrapper.state('compareCards')[0]).length;
+    wrapper.instance().toggleCompare('COLORADO');
+    expected = Object.keys(wrapper.state('compareCards')[0]).length;  
+    expect(expected).toEqual(3);
+    wrapper.instance().toggleCompare('COLORADO');
+    expected = Object.keys(wrapper.state('compareCards')[0]).length;  
+    expect(expected).toEqual(0);
+  });
+
   });
 
   it('should have a default state of an empty schools array', () => {
