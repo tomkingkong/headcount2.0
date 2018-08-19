@@ -52,6 +52,7 @@ class App extends Component {
   }
   
   toggleComparedData = (loc1, loc2) => {
+    let updateData = {};
   }
 
   render() {
