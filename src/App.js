@@ -51,8 +51,7 @@ class App extends Component {
     }, () => this.toggleComparedData(...this.state.compareCards));
   }
   
-  selectSchool = (id) => {
-    console.log('selected', id)
+  toggleComparedData = (loc1, loc2) => {
   }
 
   render() {
