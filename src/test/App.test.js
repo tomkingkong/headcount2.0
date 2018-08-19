@@ -49,6 +49,20 @@ describe('App', () => {
     };
     expect(wrapper.find(Card).first().props()).toEqual(expected);
   });
+
+  it('should pass correct props to both CardList components', () => {
+    const expected1 = { 
+      'dataCards': wrapper.state('compareCards'),
+      'toggleCompare': wrapper.instance().toggleCompare
+    };
+    const expected2 = {
+      'dataCards': wrapper.state('dataCards'), 
+      'toggleCompare': wrapper.instance().toggleCompare
+    };
+
+    expect(wrapper.find(CardList).first().props()).toEqual(expected1);
+    expect(wrapper.find(CardList).last().props()).toEqual(expected2);
+  });
   });
 
   it('should have a default state of an empty schools array', () => {
