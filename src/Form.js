@@ -23,13 +23,10 @@ class Form extends Component {
   }
 
   render() {
+    const { input } = this.state;
     return (
-      <form 
-        className="Form" 
-        onSubmit={(e) => {
-          e.preventDefault();
-          
-        }}
+      <form className="Form" 
+        onSubmit={this.handleSubmit}
       >
         <input 
           type="text" 
