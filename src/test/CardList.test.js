@@ -44,8 +44,9 @@ describe('CardList', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should exist', () => {
-    expect(wrapper).toBeDefined();
+  it('should match the snapshot passing an array with data', () => {
+    const wrapper = shallow(<CardList dataCards={mockData}/>);
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('renders without crashing', () => {
