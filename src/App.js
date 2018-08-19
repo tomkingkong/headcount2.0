@@ -64,7 +64,7 @@ class App extends Component {
     const { dataCards, comparedData, compareCards } = this.state;
     return (
       <div className="App">
-        <CardList schools={compareSchools} />
+        {typeof comparedData.compared === "number" && <Card comparedData={comparedData} />}
         <Form updateDistrict={this.updateDistrict} />
         <CardList schools={schools} selectSchool={this.selectSchool}/>
       </div>
