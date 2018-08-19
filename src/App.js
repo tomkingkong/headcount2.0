@@ -35,6 +35,17 @@ class App extends Component {
     const newComparison = compareCards;
     const foundDistrict = district.findByName(id);
     const cardIndex = compareCards.indexOf(foundDistrict);
+
+    for (let i = cardIndex; i < compareCards.length; i++) {
+      if (i < 0) continue;
+      if (!Object.keys(compareCards[i]).length) {
+        newComparison[i] = foundDistrict;
+        break;
+      } else if (compareCards[i].location === id) {
+        newComparison[i] = {};
+        break;
+      }
+    }
     this.setState({
       schools: newSearch
     })
