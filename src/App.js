@@ -47,8 +47,8 @@ class App extends Component {
       }
     }
     this.setState({
-      schools: newSearch
-    })
+      compareCards: newComparison
+    }, () => this.toggleComparedData(...this.state.compareCards));
   }
   
   selectSchool = (id) => {
