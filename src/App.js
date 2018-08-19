@@ -55,6 +55,10 @@ class App extends Component {
     if (Object.keys(loc1).length && Object.keys(loc2).length) {
       updateData = district.compareDistrictAverages(loc1.location, loc2.location);
   }
+    this.setState({
+      comparedData: updateData
+    });
+  }
 
   render() {
     const { schools, compareSchools } = this.state
