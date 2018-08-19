@@ -125,6 +125,17 @@ describe('App', () => {
     expect(Object.keys(wrapper.state('comparedData')).length).toEqual(3);
   });
 
+  it('should have no more than two cards in the compareCards array', () => {
+    wrapper = mount(<App />);    
+    const cardInField1 = wrapper.find(CardList).last().find(Card).at(0);
+    const cardInField2 = wrapper.find(CardList).last().find(Card).at(2);
+    const cardInField3 = wrapper.find(CardList).last().find(Card).at(3);
+    cardInField1.simulate('click');
+    cardInField2.simulate('click');
+    expect(wrapper.state('compareCards').length).toEqual(2);
+    cardInField3.simulate('click');
+    expect(wrapper.state('compareCards').length).toEqual(2);
+  });
   });
 
   it('should have a default state of an empty schools array', () => {
