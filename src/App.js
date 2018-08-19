@@ -31,6 +31,7 @@ class App extends Component {
   }
   
   toggleCompare = (id) => {
+    const { compareCards } = this.state;
     this.setState({
       schools: newSearch
     })
