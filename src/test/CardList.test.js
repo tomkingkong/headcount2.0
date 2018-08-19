@@ -49,9 +49,10 @@ describe('CardList', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('renders without crashing', () => {
-    const section = document.createElement('section');
-    ReactDOM.render(<CardList cards={mockData} />, section);
+  it('should match the snapshot passing an array with data objects and a function', () => {
+    const mockFn = jest.fn();
+    const wrapper = shallow(<CardList dataCards={mockData} toggleCompare={mockFn}/>);
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('should render section element', () => {
