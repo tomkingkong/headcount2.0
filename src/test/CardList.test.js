@@ -39,8 +39,9 @@ const mockData = [
 
 describe('CardList', () => {
 
-  beforeEach(() => {
-    wrapper = shallow(<CardList cards={mockData} />);
+  it('should match the snapshot passing an empty array', () => {
+    const wrapper = shallow(<CardList dataCards={[]}/>);
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('should exist', () => {
