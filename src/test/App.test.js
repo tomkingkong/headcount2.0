@@ -31,6 +31,12 @@ describe('App', () => {
   it('should update state on componentDidMount with a populated dataCards array', () => {
     expect(wrapper.state('dataCards')).not.toEqual(0);
   });
+  
+  it('should pass correct props to Form component', () => {
+    const expected = {'updateDistrict': wrapper.instance().updateDistrict};
+    expect(wrapper.find(Form).props()).toEqual(expected);
+  });
+  
   });
 
   it('should have a default state of an empty schools array', () => {
