@@ -149,8 +149,17 @@ describe('App', () => {
     expect(expected).toEqual(0);
   });
 
-  it('should have a default state of an empty schools array', () => {
-    expect(wrapper.state().schools).toEqual([]);
+  it('user should be able to deselect a card from the dataCards array', () => {
+    wrapper = mount(<App />);
+    const cardInField1 = wrapper.find(CardList).last().find(Card).first().find('article');
+    cardInField1.simulate('click');
+    let expected = Object.keys(wrapper.state('compareCards')[0]).length; 
+    expect(expected).toEqual(3);
+    cardInField1.simulate('click');
+    expected = Object.keys(wrapper.state('compareCards')[0]).length; 
+    expect(expected).toEqual(0);
+  });
+
   });
 
   it('should render a CardList component', () => {
