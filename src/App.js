@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.updateDistrict(undefined);
+    this.updateDistrict();
   }
 
   updateDistrict = (string) => {
