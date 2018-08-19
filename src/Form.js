@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import './Form.css'
 
@@ -39,5 +40,9 @@ class Form extends Component {
     );
   }
 }
+
+Form.propTypes = {
+  updateDistrict: PropTypes.func
+};
 
 export default Form;
