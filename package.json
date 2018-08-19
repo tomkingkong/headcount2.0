@@ -20,5 +20,12 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "eslint": "react-scripts eslint"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/data/*"
+    ]
   }
 }
