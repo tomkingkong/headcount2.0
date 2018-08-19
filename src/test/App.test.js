@@ -63,6 +63,14 @@ describe('App', () => {
     expect(wrapper.find(CardList).first().props()).toEqual(expected1);
     expect(wrapper.find(CardList).last().props()).toEqual(expected2);
   });
+
+  it('should contain a filled comparedData object in state if comparedCards is full', () => {
+    wrapper.instance().toggleCompare('COLORADO');
+    wrapper.instance().toggleCompare('ASPEN 1');
+    const expected = Object.keys(wrapper.state('comparedData'));
+    expect(expected.length).toEqual(3);
+  });
+
   });
 
   it('should have a default state of an empty schools array', () => {
