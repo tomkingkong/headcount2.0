@@ -49,4 +49,8 @@ describe('Card', () => {
     expect(wrapper.find('li').hasClass('Red')).toEqual(true);
   });
 
+  it.skip('should have default state selected equal false', () => {
+
+  });
+
 });
