@@ -73,7 +73,7 @@ describe('Card', () => {
 
   it('handleClick should not change selected state if toggleCompare is false', () => {
     const dataEmpty = {'stats': { 2001: 0.4}, 'location': '', 'id': 'true'};
-    const mockFn = function() {return false};
+    const mockFn = function() { return false; };
     const wrapper = shallow(<Card {...dataEmpty} key={dataEmpty.id} toggleCompare={mockFn}/>);
     wrapper.instance().handleClick();
     expect(wrapper.state('selected')).toEqual(false);
