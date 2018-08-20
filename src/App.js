@@ -70,7 +70,7 @@ class App extends Component {
         <section className="compare">
           <CardList dataCards={compareCards} toggleCompare={this.toggleCompare} compare={true} />
           <CompareCard comparedData={comparedData} />
-        <Form updateDistrict={this.updateDistrict} />
+          <Form updateDistrict={this.updateDistrict} />
         </section>
         <CardList dataCards={dataCards} compareCards={compareCards} toggleCompare={this.toggleCompare} />
       </div>
