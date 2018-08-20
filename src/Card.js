@@ -10,10 +10,9 @@ class Card extends Component {
       selected: false
     };
     }
-  }
 
   handleClick = () => {
-    const { toggleCompare, id, compare } = this.props;
+    const { toggleCompare, id } = this.props;
     if (!id) return false;
     if (toggleCompare(id) !== false) {
       this.setState({
