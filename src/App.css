@@ -9,4 +9,13 @@
   color: white;
   font-family: 'Molle', cursive, sans-serif;
 }
+
+.compare {
+  background-color: #2D2D2D;
+  border-radius: 0.2rem;
+  box-shadow: 0rem 0.3rem 0.8rem #2D2D2D;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -0.05rem;
+  width: 100%;
 }
