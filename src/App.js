@@ -4,7 +4,7 @@ import kinderData from './data/kindergartners_in_full_day_program';
 import DistrictRepository from './helper';
 import CardList from './CardList';
 import Form from './Form';
-import Card from './Card';
+import CompareCard from './CompareCard';
 import './App.css';
 
 const district = new DistrictRepository(kinderData);
