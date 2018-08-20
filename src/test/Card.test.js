@@ -61,4 +61,8 @@ describe('Card', () => {
 
   });
 
+  it.skip('should remove class of selected if clicked again', () => {
+
+  });
+
 });
