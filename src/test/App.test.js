@@ -53,6 +53,7 @@ describe('App', () => {
 
   it('should pass correct props to both CardList components', () => {
     const expected1 = { 
+      "compare": true,
       'dataCards': wrapper.state('compareCards'),
       'toggleCompare': wrapper.instance().toggleCompare
     };
