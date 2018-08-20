@@ -55,8 +55,12 @@ describe('Card', () => {
     expect(wrapper.state('selected')).toEqual(false);
   });
 
-  it.skip('should state selected equal true if card clicked', () => {
-
+  it('handleClick should toggle selected state if toggleCompare and id are true', () => {
+    const dataEmpty = {'stats': { 2001: 0.4}, 'location': '', 'id': 'true'};
+    const mockFn = jest.fn();
+    const wrapper = shallow(<Card {...dataEmpty} key={dataEmpty.id} toggleCompare={mockFn}/>);
+    wrapper.instance().handleClick();
+    expect(wrapper.state('selected')).toEqual(true);
   });
 
   it.skip('should obtain class of selected once clicked', () => {
