@@ -11,9 +11,15 @@ class Card extends Component {
     }
   }
 
-  const displayCardData = () => {
-    const dates = Object.keys(stats).map(year => (
-      <li className={stats[year] > 0.5 ? 'Green' : 'Red'} 
+  handleClick = () => {
+    const { toggleCompare, id, compare } = this.props;
+    if (!id) return false;
+    if (toggleCompare(id) !== false) {
+      this.setState({
+        selected: !this.state.selected
+      })
+    }
+  }
         key={location+year}
       >
         {year}: {stats[year]}
