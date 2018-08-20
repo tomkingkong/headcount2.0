@@ -171,7 +171,7 @@ describe('App', () => {
     const expected1 = Object.keys(wrapper.state('compareCards')[0]).length;
     const expected2 = Object.keys(wrapper.state('compareCards')[1]).length;
     const comparedData = Object.keys(wrapper.state('comparedData')).length;
-    const comparedDisplay = Object.keys(wrapper.find(Card).first().props().comparedData).length;
+    const comparedDisplay = Object.keys(wrapper.find(CompareCard).props().comparedData).length;
     expect(expected1).toEqual(3);
     expect(expected2).toEqual(3);
     expect(comparedData).toEqual(3);
