@@ -53,6 +53,8 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Card
+          compare={undefined}
+          compareIDs={undefined}
           id="COLORADO"
           location="COLORADO"
           stats={
@@ -66,6 +68,8 @@ ShallowWrapper {
           toggleCompare={undefined}
 />,
         <Card
+          compare={undefined}
+          compareIDs={undefined}
           id="ASPEN"
           location="ASPEN"
           stats={
@@ -79,6 +83,8 @@ ShallowWrapper {
           toggleCompare={undefined}
 />,
         <Card
+          compare={undefined}
+          compareIDs={undefined}
           id="SHMOOP"
           location="SHMOOP"
           stats={
@@ -99,8 +105,10 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "COLORADO",
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
+          "compare": undefined,
+          "compareIDs": undefined,
           "id": "COLORADO",
           "location": "COLORADO",
           "stats": Object {
@@ -118,8 +126,10 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "ASPEN",
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
+          "compare": undefined,
+          "compareIDs": undefined,
           "id": "ASPEN",
           "location": "ASPEN",
           "stats": Object {
@@ -137,8 +147,10 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "SHMOOP",
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
+          "compare": undefined,
+          "compareIDs": undefined,
           "id": "SHMOOP",
           "location": "SHMOOP",
           "stats": Object {
@@ -164,6 +176,8 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Card
+            compare={undefined}
+            compareIDs={undefined}
             id="COLORADO"
             location="COLORADO"
             stats={
@@ -177,6 +191,8 @@ ShallowWrapper {
             toggleCompare={undefined}
 />,
           <Card
+            compare={undefined}
+            compareIDs={undefined}
             id="ASPEN"
             location="ASPEN"
             stats={
@@ -190,6 +206,8 @@ ShallowWrapper {
             toggleCompare={undefined}
 />,
           <Card
+            compare={undefined}
+            compareIDs={undefined}
             id="SHMOOP"
             location="SHMOOP"
             stats={
@@ -210,8 +228,10 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "COLORADO",
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
+            "compare": undefined,
+            "compareIDs": undefined,
             "id": "COLORADO",
             "location": "COLORADO",
             "stats": Object {
@@ -229,8 +249,10 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "ASPEN",
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
+            "compare": undefined,
+            "compareIDs": undefined,
             "id": "ASPEN",
             "location": "ASPEN",
             "stats": Object {
@@ -248,8 +270,10 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "SHMOOP",
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
+            "compare": undefined,
+            "compareIDs": undefined,
             "id": "SHMOOP",
             "location": "SHMOOP",
             "stats": Object {
@@ -339,6 +363,8 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Card
+          compare={undefined}
+          compareIDs={undefined}
           id="COLORADO"
           location="COLORADO"
           stats={
@@ -352,6 +378,8 @@ ShallowWrapper {
           toggleCompare={[Function]}
 />,
         <Card
+          compare={undefined}
+          compareIDs={undefined}
           id="ASPEN"
           location="ASPEN"
           stats={
@@ -365,6 +393,8 @@ ShallowWrapper {
           toggleCompare={[Function]}
 />,
         <Card
+          compare={undefined}
+          compareIDs={undefined}
           id="SHMOOP"
           location="SHMOOP"
           stats={
@@ -385,8 +415,10 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "COLORADO",
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
+          "compare": undefined,
+          "compareIDs": undefined,
           "id": "COLORADO",
           "location": "COLORADO",
           "stats": Object {
@@ -404,8 +436,10 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "ASPEN",
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
+          "compare": undefined,
+          "compareIDs": undefined,
           "id": "ASPEN",
           "location": "ASPEN",
           "stats": Object {
@@ -423,8 +457,10 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "SHMOOP",
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
+          "compare": undefined,
+          "compareIDs": undefined,
           "id": "SHMOOP",
           "location": "SHMOOP",
           "stats": Object {
@@ -450,6 +486,8 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Card
+            compare={undefined}
+            compareIDs={undefined}
             id="COLORADO"
             location="COLORADO"
             stats={
@@ -463,6 +501,8 @@ ShallowWrapper {
             toggleCompare={[Function]}
 />,
           <Card
+            compare={undefined}
+            compareIDs={undefined}
             id="ASPEN"
             location="ASPEN"
             stats={
@@ -476,6 +516,8 @@ ShallowWrapper {
             toggleCompare={[Function]}
 />,
           <Card
+            compare={undefined}
+            compareIDs={undefined}
             id="SHMOOP"
             location="SHMOOP"
             stats={
@@ -496,8 +538,10 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "COLORADO",
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
+            "compare": undefined,
+            "compareIDs": undefined,
             "id": "COLORADO",
             "location": "COLORADO",
             "stats": Object {
@@ -515,8 +559,10 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "ASPEN",
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
+            "compare": undefined,
+            "compareIDs": undefined,
             "id": "ASPEN",
             "location": "ASPEN",
             "stats": Object {
@@ -534,8 +580,10 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "SHMOOP",
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
+            "compare": undefined,
+            "compareIDs": undefined,
             "id": "SHMOOP",
             "location": "SHMOOP",
             "stats": Object {

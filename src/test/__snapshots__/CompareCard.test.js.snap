@@ -1,0 +1,451 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompareCard should match the snapshot passing an array with data 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CompareCard
+    comparedData={
+        Object {
+            "comparedData": Object {
+              "ASPEN 1": 0.999,
+              "COLORADO": 0.53,
+              "compared": 0.531,
+            },
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h4>
+          Object {
+                    "ASPEN 1": 0.999,
+                    "COLORADO": 0.53,
+                    "compared": 0.531,
+                  }
+          <br />
+          AVG
+</h4>,
+        <p />,
+        <h4>
+          <br />
+          AVG
+</h4>,
+      ],
+      "className": "CompareCard hide",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            Object {
+              "ASPEN 1": 0.999,
+              "COLORADO": 0.53,
+              "compared": 0.531,
+            },
+            <br />,
+            "AVG",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "ASPEN 1": 0.999,
+            "COLORADO": 0.53,
+            "compared": 0.531,
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          "AVG",
+        ],
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            undefined,
+            <br />,
+            "AVG",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          undefined,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          "AVG",
+        ],
+        "type": "h4",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h4>
+            Object {
+                        "ASPEN 1": 0.999,
+                        "COLORADO": 0.53,
+                        "compared": 0.531,
+                      }
+            <br />
+            AVG
+</h4>,
+          <p />,
+          <h4>
+            <br />
+            AVG
+</h4>,
+        ],
+        "className": "CompareCard hide",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              Object {
+                "ASPEN 1": 0.999,
+                "COLORADO": 0.53,
+                "compared": 0.531,
+              },
+              <br />,
+              "AVG",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "ASPEN 1": 0.999,
+              "COLORADO": 0.53,
+              "compared": 0.531,
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            "AVG",
+          ],
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              undefined,
+              <br />,
+              "AVG",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            "AVG",
+          ],
+          "type": "h4",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "prevContext": true,
+          },
+        },
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`CompareCard should match the snapshot passing an empty data object 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CompareCard
+    comparedData={Object {}}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h4>
+          <br />
+          AVG
+</h4>,
+        <p />,
+        <h4>
+          <br />
+          AVG
+</h4>,
+      ],
+      "className": "CompareCard hide",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            undefined,
+            <br />,
+            "AVG",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          undefined,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          "AVG",
+        ],
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            undefined,
+            <br />,
+            "AVG",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          undefined,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          "AVG",
+        ],
+        "type": "h4",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h4>
+            <br />
+            AVG
+</h4>,
+          <p />,
+          <h4>
+            <br />
+            AVG
+</h4>,
+        ],
+        "className": "CompareCard hide",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              undefined,
+              <br />,
+              "AVG",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            "AVG",
+          ],
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              undefined,
+              <br />,
+              "AVG",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            "AVG",
+          ],
+          "type": "h4",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "prevContext": true,
+          },
+        },
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

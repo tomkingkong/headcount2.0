@@ -27,9 +27,232 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        undefined,
-        <div>
+      "children": <div>
+        <h1>
+                SHMOOP
+        </h1>
+        <ul>
+                <li
+                        className="Green"
+                >
+                        2005
+                        : 
+                        0.521
+                </li>
+                <li
+                        className="Green"
+                >
+                        2017
+                        : 
+                        0.521
+                </li>
+                <li
+                        className="Green"
+                >
+                        2018
+                        : 
+                        0.521
+                </li>
+                <li
+                        className="Green"
+                >
+                        2019
+                        : 
+                        0.521
+                </li>
+        </ul>
+</div>,
+      "className": "Card",
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            SHMOOP
+</h1>,
+          <ul>
+            <li
+                        className="Green"
+            >
+                        2005
+                        : 
+                        0.521
+            </li>
+            <li
+                        className="Green"
+            >
+                        2017
+                        : 
+                        0.521
+            </li>
+            <li
+                        className="Green"
+            >
+                        2018
+                        : 
+                        0.521
+            </li>
+            <li
+                        className="Green"
+            >
+                        2019
+                        : 
+                        0.521
+            </li>
+</ul>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "SHMOOP",
+          },
+          "ref": null,
+          "rendered": "SHMOOP",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li
+                className="Green"
+>
+                2005
+                : 
+                0.521
+</li>,
+              <li
+                className="Green"
+>
+                2017
+                : 
+                0.521
+</li>,
+              <li
+                className="Green"
+>
+                2018
+                : 
+                0.521
+</li>,
+              <li
+                className="Green"
+>
+                2019
+                : 
+                0.521
+</li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "SHMOOP2005",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2005",
+                  ": ",
+                  0.521,
+                ],
+                "className": "Green",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2005",
+                ": ",
+                0.521,
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "SHMOOP2017",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2017",
+                  ": ",
+                  0.521,
+                ],
+                "className": "Green",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2017",
+                ": ",
+                0.521,
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "SHMOOP2018",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2018",
+                  ": ",
+                  0.521,
+                ],
+                "className": "Green",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2018",
+                ": ",
+                0.521,
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "SHMOOP2019",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2019",
+                  ": ",
+                  0.521,
+                ],
+                "className": "Green",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2019",
+                ": ",
+                0.521,
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div>
           <h1>
                     SHMOOP
           </h1>
@@ -64,14 +287,11 @@ ShallowWrapper {
                     </li>
           </ul>
 </div>,
-      ],
-      "className": "Card",
-      "onClick": [Function],
-    },
-    "ref": null,
-    "rendered": Array [
-      undefined,
-      Object {
+        "className": "Card",
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -249,238 +469,6 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-    ],
-    "type": "article",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          undefined,
-          <div>
-            <h1>
-                        SHMOOP
-            </h1>
-            <ul>
-                        <li
-                                    className="Green"
-                        >
-                                    2005
-                                    : 
-                                    0.521
-                        </li>
-                        <li
-                                    className="Green"
-                        >
-                                    2017
-                                    : 
-                                    0.521
-                        </li>
-                        <li
-                                    className="Green"
-                        >
-                                    2018
-                                    : 
-                                    0.521
-                        </li>
-                        <li
-                                    className="Green"
-                        >
-                                    2019
-                                    : 
-                                    0.521
-                        </li>
-            </ul>
-</div>,
-        ],
-        "className": "Card",
-        "onClick": [Function],
-      },
-      "ref": null,
-      "rendered": Array [
-        undefined,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <h1>
-                SHMOOP
-</h1>,
-              <ul>
-                <li
-                                className="Green"
-                >
-                                2005
-                                : 
-                                0.521
-                </li>
-                <li
-                                className="Green"
-                >
-                                2017
-                                : 
-                                0.521
-                </li>
-                <li
-                                className="Green"
-                >
-                                2018
-                                : 
-                                0.521
-                </li>
-                <li
-                                className="Green"
-                >
-                                2019
-                                : 
-                                0.521
-                </li>
-</ul>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "SHMOOP",
-              },
-              "ref": null,
-              "rendered": "SHMOOP",
-              "type": "h1",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <li
-                    className="Green"
->
-                    2005
-                    : 
-                    0.521
-</li>,
-                  <li
-                    className="Green"
->
-                    2017
-                    : 
-                    0.521
-</li>,
-                  <li
-                    className="Green"
->
-                    2018
-                    : 
-                    0.521
-</li>,
-                  <li
-                    className="Green"
->
-                    2019
-                    : 
-                    0.521
-</li>,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": "SHMOOP2005",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "2005",
-                      ": ",
-                      0.521,
-                    ],
-                    "className": "Green",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "2005",
-                    ": ",
-                    0.521,
-                  ],
-                  "type": "li",
-                },
-                Object {
-                  "instance": null,
-                  "key": "SHMOOP2017",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "2017",
-                      ": ",
-                      0.521,
-                    ],
-                    "className": "Green",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "2017",
-                    ": ",
-                    0.521,
-                  ],
-                  "type": "li",
-                },
-                Object {
-                  "instance": null,
-                  "key": "SHMOOP2018",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "2018",
-                      ": ",
-                      0.521,
-                    ],
-                    "className": "Green",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "2018",
-                    ": ",
-                    0.521,
-                  ],
-                  "type": "li",
-                },
-                Object {
-                  "instance": null,
-                  "key": "SHMOOP2019",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "2019",
-                      ": ",
-                      0.521,
-                    ],
-                    "className": "Green",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "2019",
-                    ": ",
-                    0.521,
-                  ],
-                  "type": "li",
-                },
-              ],
-              "type": "ul",
-            },
-          ],
-          "type": "div",
-        },
-      ],
       "type": "article",
     },
   ],
@@ -529,9 +517,232 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        undefined,
-        <div>
+      "children": <div>
+        <h1>
+                SHMOOP
+        </h1>
+        <ul>
+                <li
+                        className="Green"
+                >
+                        2005
+                        : 
+                        0.521
+                </li>
+                <li
+                        className="Green"
+                >
+                        2017
+                        : 
+                        0.521
+                </li>
+                <li
+                        className="Green"
+                >
+                        2018
+                        : 
+                        0.521
+                </li>
+                <li
+                        className="Green"
+                >
+                        2019
+                        : 
+                        0.521
+                </li>
+        </ul>
+</div>,
+      "className": "Card",
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            SHMOOP
+</h1>,
+          <ul>
+            <li
+                        className="Green"
+            >
+                        2005
+                        : 
+                        0.521
+            </li>
+            <li
+                        className="Green"
+            >
+                        2017
+                        : 
+                        0.521
+            </li>
+            <li
+                        className="Green"
+            >
+                        2018
+                        : 
+                        0.521
+            </li>
+            <li
+                        className="Green"
+            >
+                        2019
+                        : 
+                        0.521
+            </li>
+</ul>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "SHMOOP",
+          },
+          "ref": null,
+          "rendered": "SHMOOP",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li
+                className="Green"
+>
+                2005
+                : 
+                0.521
+</li>,
+              <li
+                className="Green"
+>
+                2017
+                : 
+                0.521
+</li>,
+              <li
+                className="Green"
+>
+                2018
+                : 
+                0.521
+</li>,
+              <li
+                className="Green"
+>
+                2019
+                : 
+                0.521
+</li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "SHMOOP2005",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2005",
+                  ": ",
+                  0.521,
+                ],
+                "className": "Green",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2005",
+                ": ",
+                0.521,
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "SHMOOP2017",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2017",
+                  ": ",
+                  0.521,
+                ],
+                "className": "Green",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2017",
+                ": ",
+                0.521,
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "SHMOOP2018",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2018",
+                  ": ",
+                  0.521,
+                ],
+                "className": "Green",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2018",
+                ": ",
+                0.521,
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "SHMOOP2019",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2019",
+                  ": ",
+                  0.521,
+                ],
+                "className": "Green",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2019",
+                ": ",
+                0.521,
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div>
           <h1>
                     SHMOOP
           </h1>
@@ -566,14 +777,11 @@ ShallowWrapper {
                     </li>
           </ul>
 </div>,
-      ],
-      "className": "Card",
-      "onClick": [Function],
-    },
-    "ref": null,
-    "rendered": Array [
-      undefined,
-      Object {
+        "className": "Card",
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -751,238 +959,6 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-    ],
-    "type": "article",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          undefined,
-          <div>
-            <h1>
-                        SHMOOP
-            </h1>
-            <ul>
-                        <li
-                                    className="Green"
-                        >
-                                    2005
-                                    : 
-                                    0.521
-                        </li>
-                        <li
-                                    className="Green"
-                        >
-                                    2017
-                                    : 
-                                    0.521
-                        </li>
-                        <li
-                                    className="Green"
-                        >
-                                    2018
-                                    : 
-                                    0.521
-                        </li>
-                        <li
-                                    className="Green"
-                        >
-                                    2019
-                                    : 
-                                    0.521
-                        </li>
-            </ul>
-</div>,
-        ],
-        "className": "Card",
-        "onClick": [Function],
-      },
-      "ref": null,
-      "rendered": Array [
-        undefined,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <h1>
-                SHMOOP
-</h1>,
-              <ul>
-                <li
-                                className="Green"
-                >
-                                2005
-                                : 
-                                0.521
-                </li>
-                <li
-                                className="Green"
-                >
-                                2017
-                                : 
-                                0.521
-                </li>
-                <li
-                                className="Green"
-                >
-                                2018
-                                : 
-                                0.521
-                </li>
-                <li
-                                className="Green"
-                >
-                                2019
-                                : 
-                                0.521
-                </li>
-</ul>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "SHMOOP",
-              },
-              "ref": null,
-              "rendered": "SHMOOP",
-              "type": "h1",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <li
-                    className="Green"
->
-                    2005
-                    : 
-                    0.521
-</li>,
-                  <li
-                    className="Green"
->
-                    2017
-                    : 
-                    0.521
-</li>,
-                  <li
-                    className="Green"
->
-                    2018
-                    : 
-                    0.521
-</li>,
-                  <li
-                    className="Green"
->
-                    2019
-                    : 
-                    0.521
-</li>,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": "SHMOOP2005",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "2005",
-                      ": ",
-                      0.521,
-                    ],
-                    "className": "Green",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "2005",
-                    ": ",
-                    0.521,
-                  ],
-                  "type": "li",
-                },
-                Object {
-                  "instance": null,
-                  "key": "SHMOOP2017",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "2017",
-                      ": ",
-                      0.521,
-                    ],
-                    "className": "Green",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "2017",
-                    ": ",
-                    0.521,
-                  ],
-                  "type": "li",
-                },
-                Object {
-                  "instance": null,
-                  "key": "SHMOOP2018",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "2018",
-                      ": ",
-                      0.521,
-                    ],
-                    "className": "Green",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "2018",
-                    ": ",
-                    0.521,
-                  ],
-                  "type": "li",
-                },
-                Object {
-                  "instance": null,
-                  "key": "SHMOOP2019",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "2019",
-                      ": ",
-                      0.521,
-                    ],
-                    "className": "Green",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "2019",
-                    ": ",
-                    0.521,
-                  ],
-                  "type": "li",
-                },
-              ],
-              "type": "ul",
-            },
-          ],
-          "type": "div",
-        },
-      ],
       "type": "article",
     },
   ],
@@ -1023,22 +999,74 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        undefined,
-        <div>
+      "children": <div>
+        <h1 />
+        <ul>
+                
+        </ul>
+</div>,
+      "className": "Card",
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1 />,
+          <ul>
+            
+</ul>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "",
+          },
+          "ref": null,
+          "rendered": "",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [],
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": "ul",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div>
           <h1 />
           <ul>
                     
           </ul>
 </div>,
-      ],
-      "className": "Card",
-      "onClick": [Function],
-    },
-    "ref": null,
-    "rendered": Array [
-      undefined,
-      Object {
+        "className": "Card",
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -1077,70 +1105,6 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-    ],
-    "type": "article",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          undefined,
-          <div>
-            <h1 />
-            <ul>
-                        
-            </ul>
-</div>,
-        ],
-        "className": "Card",
-        "onClick": [Function],
-      },
-      "ref": null,
-      "rendered": Array [
-        undefined,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <h1 />,
-              <ul>
-                
-</ul>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "",
-              },
-              "ref": null,
-              "rendered": "",
-              "type": "h1",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [],
-              },
-              "ref": null,
-              "rendered": Array [],
-              "type": "ul",
-            },
-          ],
-          "type": "div",
-        },
-      ],
       "type": "article",
     },
   ],

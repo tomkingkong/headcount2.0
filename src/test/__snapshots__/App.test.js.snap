@@ -17,51 +17,63 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        false,
-        <CardList
-          dataCards={
-                    Array [
-                              Object {
-                                "key": "COLORADO",
-                                "location": "COLORADO",
-                                "stats": Object {
-                                  "2004": 0.24,
-                                  "2005": 0.278,
-                                  "2006": 0.337,
-                                  "2007": 0.395,
-                                  "2008": 0.536,
-                                  "2009": 0.598,
-                                  "2010": 0.64,
-                                  "2011": 0.672,
-                                  "2012": 0.695,
-                                  "2013": 0.703,
-                                  "2014": 0.741,
-                                },
-                              },
-                              Object {
-                                "key": "ASPEN 1",
-                                "location": "ASPEN 1",
-                                "stats": Object {
-                                  "2004": 1,
-                                  "2005": 1,
-                                  "2006": 1,
-                                  "2007": 1,
-                                  "2008": 1,
-                                  "2009": 1,
-                                  "2010": 1,
-                                  "2011": 1,
-                                  "2012": 1,
-                                  "2013": 1,
-                                  "2014": 0.992,
-                                },
-                              },
-                            ]
-          }
-          toggleCompare={[Function]}
-/>,
-        <Form
-          updateDistrict={[Function]}
-/>,
+        <h1
+          className="title"
+>
+          HeadCount
+</h1>,
+        <section
+          className="compare"
+>
+          <CardList
+                    compare={true}
+                    dataCards={
+                              Array [
+                                        Object {
+                                          "key": "COLORADO",
+                                          "location": "COLORADO",
+                                          "stats": Object {
+                                            "2004": 0.24,
+                                            "2005": 0.278,
+                                            "2006": 0.337,
+                                            "2007": 0.395,
+                                            "2008": 0.536,
+                                            "2009": 0.598,
+                                            "2010": 0.64,
+                                            "2011": 0.672,
+                                            "2012": 0.695,
+                                            "2013": 0.703,
+                                            "2014": 0.741,
+                                          },
+                                        },
+                                        Object {
+                                          "key": "ASPEN 1",
+                                          "location": "ASPEN 1",
+                                          "stats": Object {
+                                            "2004": 1,
+                                            "2005": 1,
+                                            "2006": 1,
+                                            "2007": 1,
+                                            "2008": 1,
+                                            "2009": 1,
+                                            "2010": 1,
+                                            "2011": 1,
+                                            "2012": 1,
+                                            "2013": 1,
+                                            "2014": 0.992,
+                                          },
+                                        },
+                                      ]
+                    }
+                    toggleCompare={[Function]}
+          />
+          <CompareCard
+                    comparedData={Object {}}
+          />
+          <Form
+                    updateDistrict={[Function]}
+          />
+</section>,
         <CardList
           dataCards={
                     Array [
@@ -3151,64 +3163,149 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      false,
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "host",
         "props": Object {
-          "dataCards": Array [
-            Object {
-              "key": "COLORADO",
-              "location": "COLORADO",
-              "stats": Object {
-                "2004": 0.24,
-                "2005": 0.278,
-                "2006": 0.337,
-                "2007": 0.395,
-                "2008": 0.536,
-                "2009": 0.598,
-                "2010": 0.64,
-                "2011": 0.672,
-                "2012": 0.695,
-                "2013": 0.703,
-                "2014": 0.741,
-              },
-            },
-            Object {
-              "key": "ASPEN 1",
-              "location": "ASPEN 1",
-              "stats": Object {
-                "2004": 1,
-                "2005": 1,
-                "2006": 1,
-                "2007": 1,
-                "2008": 1,
-                "2009": 1,
-                "2010": 1,
-                "2011": 1,
-                "2012": 1,
-                "2013": 1,
-                "2014": 0.992,
-              },
-            },
-          ],
-          "toggleCompare": [Function],
+          "children": "HeadCount",
+          "className": "title",
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": "HeadCount",
+        "type": "h1",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "updateDistrict": [Function],
+          "children": Array [
+            <CardList
+              compare={true}
+              dataCards={
+                            Array [
+                                          Object {
+                                            "key": "COLORADO",
+                                            "location": "COLORADO",
+                                            "stats": Object {
+                                              "2004": 0.24,
+                                              "2005": 0.278,
+                                              "2006": 0.337,
+                                              "2007": 0.395,
+                                              "2008": 0.536,
+                                              "2009": 0.598,
+                                              "2010": 0.64,
+                                              "2011": 0.672,
+                                              "2012": 0.695,
+                                              "2013": 0.703,
+                                              "2014": 0.741,
+                                            },
+                                          },
+                                          Object {
+                                            "key": "ASPEN 1",
+                                            "location": "ASPEN 1",
+                                            "stats": Object {
+                                              "2004": 1,
+                                              "2005": 1,
+                                              "2006": 1,
+                                              "2007": 1,
+                                              "2008": 1,
+                                              "2009": 1,
+                                              "2010": 1,
+                                              "2011": 1,
+                                              "2012": 1,
+                                              "2013": 1,
+                                              "2014": 0.992,
+                                            },
+                                          },
+                                        ]
+              }
+              toggleCompare={[Function]}
+/>,
+            <CompareCard
+              comparedData={Object {}}
+/>,
+            <Form
+              updateDistrict={[Function]}
+/>,
+          ],
+          "className": "compare",
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "compare": true,
+              "dataCards": Array [
+                Object {
+                  "key": "COLORADO",
+                  "location": "COLORADO",
+                  "stats": Object {
+                    "2004": 0.24,
+                    "2005": 0.278,
+                    "2006": 0.337,
+                    "2007": 0.395,
+                    "2008": 0.536,
+                    "2009": 0.598,
+                    "2010": 0.64,
+                    "2011": 0.672,
+                    "2012": 0.695,
+                    "2013": 0.703,
+                    "2014": 0.741,
+                  },
+                },
+                Object {
+                  "key": "ASPEN 1",
+                  "location": "ASPEN 1",
+                  "stats": Object {
+                    "2004": 1,
+                    "2005": 1,
+                    "2006": 1,
+                    "2007": 1,
+                    "2008": 1,
+                    "2009": 1,
+                    "2010": 1,
+                    "2011": 1,
+                    "2012": 1,
+                    "2013": 1,
+                    "2014": 0.992,
+                  },
+                },
+              ],
+              "toggleCompare": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "comparedData": Object {},
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "updateDistrict": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "section",
       },
       Object {
         "instance": null,
@@ -6310,51 +6407,63 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          false,
-          <CardList
-            dataCards={
-                        Array [
-                                    Object {
-                                      "key": "COLORADO",
-                                      "location": "COLORADO",
-                                      "stats": Object {
-                                        "2004": 0.24,
-                                        "2005": 0.278,
-                                        "2006": 0.337,
-                                        "2007": 0.395,
-                                        "2008": 0.536,
-                                        "2009": 0.598,
-                                        "2010": 0.64,
-                                        "2011": 0.672,
-                                        "2012": 0.695,
-                                        "2013": 0.703,
-                                        "2014": 0.741,
-                                      },
-                                    },
-                                    Object {
-                                      "key": "ASPEN 1",
-                                      "location": "ASPEN 1",
-                                      "stats": Object {
-                                        "2004": 1,
-                                        "2005": 1,
-                                        "2006": 1,
-                                        "2007": 1,
-                                        "2008": 1,
-                                        "2009": 1,
-                                        "2010": 1,
-                                        "2011": 1,
-                                        "2012": 1,
-                                        "2013": 1,
-                                        "2014": 0.992,
-                                      },
-                                    },
-                                  ]
-            }
-            toggleCompare={[Function]}
-/>,
-          <Form
-            updateDistrict={[Function]}
-/>,
+          <h1
+            className="title"
+>
+            HeadCount
+</h1>,
+          <section
+            className="compare"
+>
+            <CardList
+                        compare={true}
+                        dataCards={
+                                    Array [
+                                                Object {
+                                                  "key": "COLORADO",
+                                                  "location": "COLORADO",
+                                                  "stats": Object {
+                                                    "2004": 0.24,
+                                                    "2005": 0.278,
+                                                    "2006": 0.337,
+                                                    "2007": 0.395,
+                                                    "2008": 0.536,
+                                                    "2009": 0.598,
+                                                    "2010": 0.64,
+                                                    "2011": 0.672,
+                                                    "2012": 0.695,
+                                                    "2013": 0.703,
+                                                    "2014": 0.741,
+                                                  },
+                                                },
+                                                Object {
+                                                  "key": "ASPEN 1",
+                                                  "location": "ASPEN 1",
+                                                  "stats": Object {
+                                                    "2004": 1,
+                                                    "2005": 1,
+                                                    "2006": 1,
+                                                    "2007": 1,
+                                                    "2008": 1,
+                                                    "2009": 1,
+                                                    "2010": 1,
+                                                    "2011": 1,
+                                                    "2012": 1,
+                                                    "2013": 1,
+                                                    "2014": 0.992,
+                                                  },
+                                                },
+                                              ]
+                        }
+                        toggleCompare={[Function]}
+            />
+            <CompareCard
+                        comparedData={Object {}}
+            />
+            <Form
+                        updateDistrict={[Function]}
+            />
+</section>,
           <CardList
             dataCards={
                         Array [
@@ -9444,64 +9553,149 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        false,
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
           "props": Object {
-            "dataCards": Array [
-              Object {
-                "key": "COLORADO",
-                "location": "COLORADO",
-                "stats": Object {
-                  "2004": 0.24,
-                  "2005": 0.278,
-                  "2006": 0.337,
-                  "2007": 0.395,
-                  "2008": 0.536,
-                  "2009": 0.598,
-                  "2010": 0.64,
-                  "2011": 0.672,
-                  "2012": 0.695,
-                  "2013": 0.703,
-                  "2014": 0.741,
-                },
-              },
-              Object {
-                "key": "ASPEN 1",
-                "location": "ASPEN 1",
-                "stats": Object {
-                  "2004": 1,
-                  "2005": 1,
-                  "2006": 1,
-                  "2007": 1,
-                  "2008": 1,
-                  "2009": 1,
-                  "2010": 1,
-                  "2011": 1,
-                  "2012": 1,
-                  "2013": 1,
-                  "2014": 0.992,
-                },
-              },
-            ],
-            "toggleCompare": [Function],
+            "children": "HeadCount",
+            "className": "title",
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": "HeadCount",
+          "type": "h1",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "updateDistrict": [Function],
+            "children": Array [
+              <CardList
+                compare={true}
+                dataCards={
+                                Array [
+                                                Object {
+                                                  "key": "COLORADO",
+                                                  "location": "COLORADO",
+                                                  "stats": Object {
+                                                    "2004": 0.24,
+                                                    "2005": 0.278,
+                                                    "2006": 0.337,
+                                                    "2007": 0.395,
+                                                    "2008": 0.536,
+                                                    "2009": 0.598,
+                                                    "2010": 0.64,
+                                                    "2011": 0.672,
+                                                    "2012": 0.695,
+                                                    "2013": 0.703,
+                                                    "2014": 0.741,
+                                                  },
+                                                },
+                                                Object {
+                                                  "key": "ASPEN 1",
+                                                  "location": "ASPEN 1",
+                                                  "stats": Object {
+                                                    "2004": 1,
+                                                    "2005": 1,
+                                                    "2006": 1,
+                                                    "2007": 1,
+                                                    "2008": 1,
+                                                    "2009": 1,
+                                                    "2010": 1,
+                                                    "2011": 1,
+                                                    "2012": 1,
+                                                    "2013": 1,
+                                                    "2014": 0.992,
+                                                  },
+                                                },
+                                              ]
+                }
+                toggleCompare={[Function]}
+/>,
+              <CompareCard
+                comparedData={Object {}}
+/>,
+              <Form
+                updateDistrict={[Function]}
+/>,
+            ],
+            "className": "compare",
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "compare": true,
+                "dataCards": Array [
+                  Object {
+                    "key": "COLORADO",
+                    "location": "COLORADO",
+                    "stats": Object {
+                      "2004": 0.24,
+                      "2005": 0.278,
+                      "2006": 0.337,
+                      "2007": 0.395,
+                      "2008": 0.536,
+                      "2009": 0.598,
+                      "2010": 0.64,
+                      "2011": 0.672,
+                      "2012": 0.695,
+                      "2013": 0.703,
+                      "2014": 0.741,
+                    },
+                  },
+                  Object {
+                    "key": "ASPEN 1",
+                    "location": "ASPEN 1",
+                    "stats": Object {
+                      "2004": 1,
+                      "2005": 1,
+                      "2006": 1,
+                      "2007": 1,
+                      "2008": 1,
+                      "2009": 1,
+                      "2010": 1,
+                      "2011": 1,
+                      "2012": 1,
+                      "2013": 1,
+                      "2014": 0.992,
+                    },
+                  },
+                ],
+                "toggleCompare": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "comparedData": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "updateDistrict": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "section",
         },
         Object {
           "instance": null,
@@ -12631,35 +12825,47 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        false,
-        <CardList
-          dataCards={
-                    Array [
-                              Object {
-                                "key": "COLORADO",
-                                "location": "COLORADO",
-                                "stats": Object {
-                                  "2004": 0.24,
-                                  "2005": 0.278,
-                                  "2006": 0.337,
-                                  "2007": 0.395,
-                                  "2008": 0.536,
-                                  "2009": 0.598,
-                                  "2010": 0.64,
-                                  "2011": 0.672,
-                                  "2012": 0.695,
-                                  "2013": 0.703,
-                                  "2014": 0.741,
-                                },
-                              },
-                              Object {},
-                            ]
-          }
-          toggleCompare={[Function]}
-/>,
-        <Form
-          updateDistrict={[Function]}
-/>,
+        <h1
+          className="title"
+>
+          HeadCount
+</h1>,
+        <section
+          className="compare"
+>
+          <CardList
+                    compare={true}
+                    dataCards={
+                              Array [
+                                        Object {
+                                          "key": "COLORADO",
+                                          "location": "COLORADO",
+                                          "stats": Object {
+                                            "2004": 0.24,
+                                            "2005": 0.278,
+                                            "2006": 0.337,
+                                            "2007": 0.395,
+                                            "2008": 0.536,
+                                            "2009": 0.598,
+                                            "2010": 0.64,
+                                            "2011": 0.672,
+                                            "2012": 0.695,
+                                            "2013": 0.703,
+                                            "2014": 0.741,
+                                          },
+                                        },
+                                        Object {},
+                                      ]
+                    }
+                    toggleCompare={[Function]}
+          />
+          <CompareCard
+                    comparedData={Object {}}
+          />
+          <Form
+                    updateDistrict={[Function]}
+          />
+</section>,
         <CardList
           dataCards={
                     Array [
@@ -15749,48 +15955,117 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      false,
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "host",
         "props": Object {
-          "dataCards": Array [
-            Object {
-              "key": "COLORADO",
-              "location": "COLORADO",
-              "stats": Object {
-                "2004": 0.24,
-                "2005": 0.278,
-                "2006": 0.337,
-                "2007": 0.395,
-                "2008": 0.536,
-                "2009": 0.598,
-                "2010": 0.64,
-                "2011": 0.672,
-                "2012": 0.695,
-                "2013": 0.703,
-                "2014": 0.741,
-              },
-            },
-            Object {},
-          ],
-          "toggleCompare": [Function],
+          "children": "HeadCount",
+          "className": "title",
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": "HeadCount",
+        "type": "h1",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "updateDistrict": [Function],
+          "children": Array [
+            <CardList
+              compare={true}
+              dataCards={
+                            Array [
+                                          Object {
+                                            "key": "COLORADO",
+                                            "location": "COLORADO",
+                                            "stats": Object {
+                                              "2004": 0.24,
+                                              "2005": 0.278,
+                                              "2006": 0.337,
+                                              "2007": 0.395,
+                                              "2008": 0.536,
+                                              "2009": 0.598,
+                                              "2010": 0.64,
+                                              "2011": 0.672,
+                                              "2012": 0.695,
+                                              "2013": 0.703,
+                                              "2014": 0.741,
+                                            },
+                                          },
+                                          Object {},
+                                        ]
+              }
+              toggleCompare={[Function]}
+/>,
+            <CompareCard
+              comparedData={Object {}}
+/>,
+            <Form
+              updateDistrict={[Function]}
+/>,
+          ],
+          "className": "compare",
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "compare": true,
+              "dataCards": Array [
+                Object {
+                  "key": "COLORADO",
+                  "location": "COLORADO",
+                  "stats": Object {
+                    "2004": 0.24,
+                    "2005": 0.278,
+                    "2006": 0.337,
+                    "2007": 0.395,
+                    "2008": 0.536,
+                    "2009": 0.598,
+                    "2010": 0.64,
+                    "2011": 0.672,
+                    "2012": 0.695,
+                    "2013": 0.703,
+                    "2014": 0.741,
+                  },
+                },
+                Object {},
+              ],
+              "toggleCompare": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "comparedData": Object {},
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "updateDistrict": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "section",
       },
       Object {
         "instance": null,
@@ -18892,35 +19167,47 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          false,
-          <CardList
-            dataCards={
-                        Array [
-                                    Object {
-                                      "key": "COLORADO",
-                                      "location": "COLORADO",
-                                      "stats": Object {
-                                        "2004": 0.24,
-                                        "2005": 0.278,
-                                        "2006": 0.337,
-                                        "2007": 0.395,
-                                        "2008": 0.536,
-                                        "2009": 0.598,
-                                        "2010": 0.64,
-                                        "2011": 0.672,
-                                        "2012": 0.695,
-                                        "2013": 0.703,
-                                        "2014": 0.741,
-                                      },
-                                    },
-                                    Object {},
-                                  ]
-            }
-            toggleCompare={[Function]}
-/>,
-          <Form
-            updateDistrict={[Function]}
-/>,
+          <h1
+            className="title"
+>
+            HeadCount
+</h1>,
+          <section
+            className="compare"
+>
+            <CardList
+                        compare={true}
+                        dataCards={
+                                    Array [
+                                                Object {
+                                                  "key": "COLORADO",
+                                                  "location": "COLORADO",
+                                                  "stats": Object {
+                                                    "2004": 0.24,
+                                                    "2005": 0.278,
+                                                    "2006": 0.337,
+                                                    "2007": 0.395,
+                                                    "2008": 0.536,
+                                                    "2009": 0.598,
+                                                    "2010": 0.64,
+                                                    "2011": 0.672,
+                                                    "2012": 0.695,
+                                                    "2013": 0.703,
+                                                    "2014": 0.741,
+                                                  },
+                                                },
+                                                Object {},
+                                              ]
+                        }
+                        toggleCompare={[Function]}
+            />
+            <CompareCard
+                        comparedData={Object {}}
+            />
+            <Form
+                        updateDistrict={[Function]}
+            />
+</section>,
           <CardList
             dataCards={
                         Array [
@@ -22010,48 +22297,117 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        false,
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
           "props": Object {
-            "dataCards": Array [
-              Object {
-                "key": "COLORADO",
-                "location": "COLORADO",
-                "stats": Object {
-                  "2004": 0.24,
-                  "2005": 0.278,
-                  "2006": 0.337,
-                  "2007": 0.395,
-                  "2008": 0.536,
-                  "2009": 0.598,
-                  "2010": 0.64,
-                  "2011": 0.672,
-                  "2012": 0.695,
-                  "2013": 0.703,
-                  "2014": 0.741,
-                },
-              },
-              Object {},
-            ],
-            "toggleCompare": [Function],
+            "children": "HeadCount",
+            "className": "title",
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": "HeadCount",
+          "type": "h1",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "updateDistrict": [Function],
+            "children": Array [
+              <CardList
+                compare={true}
+                dataCards={
+                                Array [
+                                                Object {
+                                                  "key": "COLORADO",
+                                                  "location": "COLORADO",
+                                                  "stats": Object {
+                                                    "2004": 0.24,
+                                                    "2005": 0.278,
+                                                    "2006": 0.337,
+                                                    "2007": 0.395,
+                                                    "2008": 0.536,
+                                                    "2009": 0.598,
+                                                    "2010": 0.64,
+                                                    "2011": 0.672,
+                                                    "2012": 0.695,
+                                                    "2013": 0.703,
+                                                    "2014": 0.741,
+                                                  },
+                                                },
+                                                Object {},
+                                              ]
+                }
+                toggleCompare={[Function]}
+/>,
+              <CompareCard
+                comparedData={Object {}}
+/>,
+              <Form
+                updateDistrict={[Function]}
+/>,
+            ],
+            "className": "compare",
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "compare": true,
+                "dataCards": Array [
+                  Object {
+                    "key": "COLORADO",
+                    "location": "COLORADO",
+                    "stats": Object {
+                      "2004": 0.24,
+                      "2005": 0.278,
+                      "2006": 0.337,
+                      "2007": 0.395,
+                      "2008": 0.536,
+                      "2009": 0.598,
+                      "2010": 0.64,
+                      "2011": 0.672,
+                      "2012": 0.695,
+                      "2013": 0.703,
+                      "2014": 0.741,
+                    },
+                  },
+                  Object {},
+                ],
+                "toggleCompare": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "comparedData": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "updateDistrict": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "section",
         },
         Object {
           "instance": null,
@@ -25181,19 +25537,31 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        false,
-        <CardList
-          dataCards={
-                    Array [
-                              Object {},
-                              Object {},
-                            ]
-          }
-          toggleCompare={[Function]}
-/>,
-        <Form
-          updateDistrict={[Function]}
-/>,
+        <h1
+          className="title"
+>
+          HeadCount
+</h1>,
+        <section
+          className="compare"
+>
+          <CardList
+                    compare={true}
+                    dataCards={
+                              Array [
+                                        Object {},
+                                        Object {},
+                                      ]
+                    }
+                    toggleCompare={[Function]}
+          />
+          <CompareCard
+                    comparedData={Object {}}
+          />
+          <Form
+                    updateDistrict={[Function]}
+          />
+</section>,
         <CardList
           dataCards={
                     Array [
@@ -28283,32 +28651,85 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      false,
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "host",
         "props": Object {
-          "dataCards": Array [
-            Object {},
-            Object {},
-          ],
-          "toggleCompare": [Function],
+          "children": "HeadCount",
+          "className": "title",
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": "HeadCount",
+        "type": "h1",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "updateDistrict": [Function],
+          "children": Array [
+            <CardList
+              compare={true}
+              dataCards={
+                            Array [
+                                          Object {},
+                                          Object {},
+                                        ]
+              }
+              toggleCompare={[Function]}
+/>,
+            <CompareCard
+              comparedData={Object {}}
+/>,
+            <Form
+              updateDistrict={[Function]}
+/>,
+          ],
+          "className": "compare",
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "compare": true,
+              "dataCards": Array [
+                Object {},
+                Object {},
+              ],
+              "toggleCompare": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "comparedData": Object {},
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "updateDistrict": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "section",
       },
       Object {
         "instance": null,
@@ -31410,19 +31831,31 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          false,
-          <CardList
-            dataCards={
-                        Array [
-                                    Object {},
-                                    Object {},
-                                  ]
-            }
-            toggleCompare={[Function]}
-/>,
-          <Form
-            updateDistrict={[Function]}
-/>,
+          <h1
+            className="title"
+>
+            HeadCount
+</h1>,
+          <section
+            className="compare"
+>
+            <CardList
+                        compare={true}
+                        dataCards={
+                                    Array [
+                                                Object {},
+                                                Object {},
+                                              ]
+                        }
+                        toggleCompare={[Function]}
+            />
+            <CompareCard
+                        comparedData={Object {}}
+            />
+            <Form
+                        updateDistrict={[Function]}
+            />
+</section>,
           <CardList
             dataCards={
                         Array [
@@ -34512,32 +34945,85 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        false,
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
           "props": Object {
-            "dataCards": Array [
-              Object {},
-              Object {},
-            ],
-            "toggleCompare": [Function],
+            "children": "HeadCount",
+            "className": "title",
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": "HeadCount",
+          "type": "h1",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "updateDistrict": [Function],
+            "children": Array [
+              <CardList
+                compare={true}
+                dataCards={
+                                Array [
+                                                Object {},
+                                                Object {},
+                                              ]
+                }
+                toggleCompare={[Function]}
+/>,
+              <CompareCard
+                comparedData={Object {}}
+/>,
+              <Form
+                updateDistrict={[Function]}
+/>,
+            ],
+            "className": "compare",
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "compare": true,
+                "dataCards": Array [
+                  Object {},
+                  Object {},
+                ],
+                "toggleCompare": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "comparedData": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "updateDistrict": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "section",
         },
         Object {
           "instance": null,
