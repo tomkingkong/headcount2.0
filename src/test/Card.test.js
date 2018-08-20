@@ -57,4 +57,8 @@ describe('Card', () => {
 
   });
 
+  it.skip('should obtain class of selected once clicked', () => {
+
+  });
+
 });
