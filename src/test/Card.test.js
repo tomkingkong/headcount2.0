@@ -53,4 +53,8 @@ describe('Card', () => {
 
   });
 
+  it.skip('should state selected equal true if card clicked', () => {
+
+  });
+
 });
