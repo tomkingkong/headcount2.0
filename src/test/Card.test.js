@@ -79,7 +79,14 @@ describe('Card', () => {
     expect(wrapper.state('selected')).toEqual(false);
   });
 
-  it.skip('should not obtain class of selected if two other cards contain that class', () => {
-
+  it('should toggle state selected to true if card clicked', () => {
+    const dataEmpty = {'stats': { 2001: 0.4}, 'location': '', 'id': 'true'};
+    const mockFn = jest.fn();
+    const wrapper = shallow(<Card {...dataEmpty} key={dataEmpty.id} toggleCompare={mockFn}/>);
+    expect(wrapper.state('selected')).toEqual(false);
+    wrapper.find('article').simulate('click');
+    expect(wrapper.state('selected')).toEqual(true);
+    wrapper.find('article').simulate('click');
+    expect(wrapper.state('selected')).toEqual(false);
   });
 });
