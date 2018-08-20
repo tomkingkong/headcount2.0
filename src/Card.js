@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import './Card.css';
 
-const Card = ({
-  stats, 
-  location, 
-  id, 
-  toggleCompare, 
-  comparedData
-}) => {
+class Card extends Component {
+  constructor() {
+    super();
+    this.state = {
+      selected: false
+    }
+  }
 
   const displayCardData = () => {
     const dates = Object.keys(stats).map(year => (
