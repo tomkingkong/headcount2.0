@@ -5,3 +5,13 @@
   height: auto;
   width: 100%;
 }
+
+.CompareList {
+  display: flex;
+  border-radius: 0.2rem;
+  justify-content: center;
+  margin: 0 auto;
+  height: 14.8rem;
+  width: 100%;
+  max-width: 20rem;
+}
