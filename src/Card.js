@@ -9,7 +9,7 @@ class Card extends Component {
     this.state = {
       selected: false
     };
-    }
+  }
 
   handleClick = () => {
     const { toggleCompare, id } = this.props;
@@ -45,7 +45,7 @@ class Card extends Component {
         </div>
       </article>
     );
-}
+  }
 }
 
 Card.propTypes = {
