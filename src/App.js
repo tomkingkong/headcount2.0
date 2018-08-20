@@ -43,6 +43,8 @@ class App extends Component {
       } else if (compareCards[i].location === id) {
         newComparison[i] = {};
         break;
+      } else if (compareCards[i].location !== id && i > 0) {
+        return false;
       }
     }
     this.setState({
