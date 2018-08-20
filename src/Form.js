@@ -28,8 +28,10 @@ class Form extends Component {
       <form className="Form" 
         onSubmit={this.handleSubmit}
       >
-        <input type="text" 
-          placeholder="Select a school"
+        <input 
+          className="search"
+          type="text" 
+          placeholder="Select card to compare.."
           value={input}
           onChange={this.handleChange}
         />
