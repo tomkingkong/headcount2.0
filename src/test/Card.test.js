@@ -49,8 +49,10 @@ describe('Card', () => {
     expect(wrapper.find('li').hasClass('Red')).toEqual(true);
   });
   
-  it.skip('should have default state selected equal false', () => {
-
+  it('should have default state selected equal false', () => {
+    const dataEmpty = {'stats': { 2001: 0.4}, 'location': '', 'id':''};
+    const wrapper = shallow(<Card {...dataEmpty} key={dataEmpty.id}/>);
+    expect(wrapper.state('selected')).toEqual(false);
   });
 
   it.skip('should state selected equal true if card clicked', () => {
