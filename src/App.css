@@ -5,6 +5,8 @@
   padding: 1rem;
 }
 
-.App section {
-  height: 9rem;
+.App .title {
+  color: white;
+  font-family: 'Molle', cursive, sans-serif;
+}
 }
