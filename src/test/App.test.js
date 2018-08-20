@@ -48,7 +48,7 @@ describe('App', () => {
         'compared': 0.531
       }
     };
-    expect(wrapper.find(Card).first().props()).toEqual(expected);
+    expect(wrapper.find(CompareCard).props()).toEqual(expected);
   });
 
   it('should pass correct props to both CardList components', () => {
