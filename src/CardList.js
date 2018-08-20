@@ -4,9 +4,12 @@ import PropTypes from 'prop-types';
 import './CardList.css';
 import Card from './Card';
 
-const CardList = ({dataCards, toggleCompare}) => {
+const CardList = ({dataCards, toggleCompare, compare, compareCards}) => {
   const displayCards = dataCards.map(card => (
-    <Card {...card} 
+    <Card 
+      compare={compare}
+      {...card} 
+      compareIDs={compareCards}
       key={card.location}
       id={card.location} 
       toggleCompare={toggleCompare} 
