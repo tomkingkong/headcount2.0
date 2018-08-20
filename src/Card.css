@@ -20,7 +20,10 @@
 
 .Card ul {
   list-style-type: none;
-  padding: auto;
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0 auto;
+  width: 5.5rem;
 }
 
 .Card h1 {
