@@ -17,6 +17,6 @@ HeadCount 2.0 is a project designed to challenge my skills at manipulating data 
 
 ## Mobile Views
 
-<img src="https://raw.githubusercontent.com/tomkingkong/headcount2.0/master/public/screenshots/Mobile_Empty.png" width="900" />
+<img src="https://raw.githubusercontent.com/tomkingkong/headcount2.0/master/public/screenshots/Mobile_Empty.png" width="500" />
 
-<img src="https://raw.githubusercontent.com/tomkingkong/headcount2.0/master/public/screenshots/Mobile_Full.png" width="900" />
+<img src="https://raw.githubusercontent.com/tomkingkong/headcount2.0/master/public/screenshots/Mobile_Full.png" width="500" />
