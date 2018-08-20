@@ -28,24 +28,24 @@ class Card extends Component {
       dates = Object.keys(stats).map(year => (
         <li 
           className={stats[year] > 0.5 ? "Green" : "Red"} 
-        key={location+year}
-      >
-        {year}: {stats[year]}
-      </li>
-    ));
+          key={location+year}
+        >
+          {year}: {stats[year]}
+        </li>
+      ));
     }
     return (
       <article 
         className={this.state.selected || compare ? "Card selected" : "Card"} 
         onClick={this.handleClick} 
       >
-      <div>
-        <h1>{location}</h1>
-        <ul>{dates}</ul>
-      </div>
-    </article>
-  );
-};
+        <div>
+          <h1>{location}</h1>
+          <ul>{dates}</ul>
+        </div>
+      </article>
+    );
+  };
 }
 
 Card.propTypes = {
