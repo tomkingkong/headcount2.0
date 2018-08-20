@@ -33,7 +33,6 @@
   padding-bottom: 0.5rem;
   height: 2.8rem;
   text-align: center;
-  transition: all 0.35s linear;
 }
 
 .Card:hover h1 {
@@ -42,7 +41,14 @@
 }
 
 .selected {
-  border: 0.2rem solid rgb(18, 100, 194);
+  overflow: scroll;
+  box-shadow: 0.4rem 0.4rem lightblue;
+  height: auto;
+}
+
+.selected h1 {
+  border-bottom: 0.2rem double lightblue;
+  color: rgba(8, 107, 221);
 }
 
 .Card .Green {
