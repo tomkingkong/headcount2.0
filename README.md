@@ -11,12 +11,12 @@ HeadCount 2.0 is a project designed to challenge my skills at manipulating data 
 
 ## Desktop Views
 
-<img src="https://raw.githubusercontent.com/tomkingkong/headcount2.0/master/my-app/public/screenshots/Desktop_Empty.png" width="900" />
+<img src="https://raw.githubusercontent.com/tomkingkong/headcount2.0/master/public/screenshots/Desktop_Empty.png" width="900" />
 
-<img src="https://raw.githubusercontent.com/tomkingkong/headcount2.0/master/my-app/public/screenshots/Desktop_Full.png" width="900" />
+<img src="https://raw.githubusercontent.com/tomkingkong/headcount2.0/master/public/screenshots/Desktop_Full.png" width="900" />
 
 ## Mobile Views
 
-<img src="https://raw.githubusercontent.com/tomkingkong/headcount2.0/master/my-app/public/screenshots/Mobile_Empty.png" width="900" />
+<img src="https://raw.githubusercontent.com/tomkingkong/headcount2.0/master/public/screenshots/Mobile_Empty.png" width="900" />
 
-<img src="https://raw.githubusercontent.com/tomkingkong/headcount2.0/master/my-app/public/screenshots/Mobile_Full.png" width="900" />
+<img src="https://raw.githubusercontent.com/tomkingkong/headcount2.0/master/public/screenshots/Mobile_Full.png" width="900" />
