@@ -67,8 +67,12 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="title">HeadCount</h1>
+        <section className="compare">
+          <CardList dataCards={compareCards} toggleCompare={this.toggleCompare} compare={true} />
+          <CompareCard comparedData={comparedData} />
         <Form updateDistrict={this.updateDistrict} />
-        <CardList dataCards={dataCards} toggleCompare={this.toggleCompare} />
+        </section>
+        <CardList dataCards={dataCards} compareCards={compareCards} toggleCompare={this.toggleCompare} />
       </div>
     );
   }
