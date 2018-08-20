@@ -8,6 +8,7 @@ class Card extends Component {
     super();
     this.state = {
       selected: false
+    };
     }
   }
 
@@ -17,7 +18,7 @@ class Card extends Component {
     if (toggleCompare(id) !== false) {
       this.setState({
         selected: !this.state.selected
-      })
+      });
     }
   }
   
