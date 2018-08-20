@@ -48,7 +48,7 @@ describe('Card', () => {
     const wrapper = shallow(<Card {...dataEmpty} key={dataEmpty.id}/>);
     expect(wrapper.find('li').hasClass('Red')).toEqual(true);
   });
-
+  
   it.skip('should have default state selected equal false', () => {
 
   });
