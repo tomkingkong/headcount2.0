@@ -1,3 +1,20 @@
 .Form {
+  display: flex;
+  background-color: #2D2D2D;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  transition: all 0.45s linear;
+}
+
+.Form .search {
+  border-radius: 0.2rem;
+  color: #2d2d2d;
   margin: 0 auto;
+  padding-left: 0.5rem;
+  height: 2rem;
+  width: 100%;
+  max-width: 17rem;
+  font-size: 1rem;
 }
