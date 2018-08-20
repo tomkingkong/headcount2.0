@@ -65,4 +65,7 @@ describe('Card', () => {
 
   });
 
+  it.skip('should not obtain class of selected if two other cards contain that class', () => {
+
+  });
 });
