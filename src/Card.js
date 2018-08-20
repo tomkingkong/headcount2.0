@@ -53,7 +53,8 @@ Card.propTypes = {
   location: PropTypes.string, 
   id: PropTypes.string, 
   toggleCompare: PropTypes.func, 
-  comparedData: PropTypes.object
+  comparedData: PropTypes.object,
+  compare: PropTypes.bool
 };
 
 export default Card;
