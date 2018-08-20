@@ -66,8 +66,7 @@ class App extends Component {
     const { dataCards, comparedData, compareCards } = this.state;
     return (
       <div className="App">
-        {typeof comparedData.compared === "number" && <Card comparedData={comparedData} />}
-        <CardList dataCards={compareCards} toggleCompare={this.toggleCompare} />
+        <h1 className="title">HeadCount</h1>
         <Form updateDistrict={this.updateDistrict} />
         <CardList dataCards={dataCards} toggleCompare={this.toggleCompare} />
       </div>
