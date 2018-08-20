@@ -28,9 +28,10 @@
 
 .Card h1 {
   border-bottom: 0.2rem double transparent;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  margin: 0.5em;
   padding-bottom: 0.5rem;
-  height: 1.8rem;
+  height: 2.8rem;
   text-align: center;
   transition: all 0.35s linear;
 }
