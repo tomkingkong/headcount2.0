@@ -63,8 +63,12 @@ describe('Card', () => {
     expect(wrapper.state('selected')).toEqual(true);
   });
 
-  it.skip('should obtain class of selected once clicked', () => {
-
+  it('handleClick should not change selected state if id is false', () => {
+    const dataEmpty = {'stats': { 2001: 0.4}, 'location': '', 'id': ''};
+    const mockFn = jest.fn();
+    const wrapper = shallow(<Card {...dataEmpty} key={dataEmpty.id} toggleCompare={mockFn}/>);
+    wrapper.instance().handleClick();
+    expect(wrapper.state('selected')).toEqual(false);
   });
 
   it.skip('should remove class of selected if clicked again', () => {
