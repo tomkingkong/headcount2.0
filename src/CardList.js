@@ -25,7 +25,9 @@ const CardList = ({dataCards, toggleCompare, compare, compareCards}) => {
 
 CardList.propTypes = {
   dataCards: PropTypes.array,
-  toggleCompare: PropTypes.func
+  toggleCompare: PropTypes.func,
+  compare: PropTypes.bool,
+  compareCards: PropTypes.array
 };
 
 export default CardList;
