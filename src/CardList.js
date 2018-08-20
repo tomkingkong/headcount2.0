@@ -17,7 +17,7 @@ const CardList = ({dataCards, toggleCompare, compare, compareCards}) => {
   ));
 
   return (
-    <section className="CardList">
+    <section className={compare ? "CompareList" : "CardList"}>
       {displayCards}
     </section>
   );
