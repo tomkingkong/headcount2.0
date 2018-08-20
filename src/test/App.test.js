@@ -38,7 +38,7 @@ describe('App', () => {
     expect(wrapper.find(Form).props()).toEqual(expected);
   });
   
-  it('should pass correct props to Card component', () => {
+  it('should pass correct props to CompareCard component', () => {
     wrapper.instance().toggleCompare('COLORADO');
     wrapper.instance().toggleCompare('ASPEN 1');
     const expected =  {
