@@ -3,6 +3,7 @@ import { shallow, mount } from 'enzyme';
 
 import App from '../App';
 import CardList from '../CardList';
+import CompareCard from '../CompareCard';
 import Card from '../Card';
 import Form from '../Form';
 
