@@ -2,13 +2,15 @@
   cursor: pointer;
   background-color: #fff;
   border-radius: 0.2rem;
-  box-shadow: 0.1rem 0.1rem lightgrey;
-  overflow: scroll;
-  min-width: 8rem;
-  width: 100%;
-  max-width: 10rem;
-  margin: 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0.5rem;
   padding: 0.5rem;
+  height: 4rem;
+  min-width: 6rem;
+  width: 100%;
+  max-width: 7rem;
   transition: all 0.25s linear;
 }
 
